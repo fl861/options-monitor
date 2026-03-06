@@ -1,76 +1,76 @@
 {
-  "timestamp": "2026-03-06 21:51:34",
+  "timestamp": "2026-03-06 22:34:26",
   "spot_prices": {
-    "BTC": 72108.34,
-    "ETH": 2060.568888888889
+    "BTC": 71027.84,
+    "ETH": 2016.9777777777779
   },
   "options": {
     "BTC": {
       "short": {
-        "instrument": "BTC-13MAR26-65000-P",
+        "instrument": "BTC-13MAR26-64000-P",
         "expiry": "2026-03-13",
         "days": 6,
-        "strike": 65000.0,
-        "price": 0.00840369,
-        "iv": 61.59,
-        "daily_price": 0.001400615
+        "strike": 64000.0,
+        "price": 0.00888011,
+        "iv": 63.41,
+        "daily_price": 0.0014800183333333334
       },
       "mid": {
-        "instrument": "BTC-20MAR26-65000-P",
+        "instrument": "BTC-20MAR26-64000-P",
         "expiry": "2026-03-20",
         "days": 13,
-        "strike": 65000.0,
-        "price": 0.0169202,
-        "iv": 58.65,
-        "daily_price": 0.0013015538461538462
+        "strike": 64000.0,
+        "price": 0.01757549,
+        "iv": 60.17,
+        "daily_price": 0.001351960769230769
       },
       "long": {
         "instrument": "BTC-24APR26-68000-P",
         "expiry": "2026-04-24",
         "days": 48,
         "strike": 68000.0,
-        "price": 0.05966076,
-        "iv": 51.98,
-        "daily_price": 0.0012429325
+        "price": 0.06691843,
+        "iv": 52.09,
+        "daily_price": 0.0013941339583333334
       },
       "ratios": {
-        "short_mid": 1.0761099159584402,
-        "short_long": 1.126863285013466,
-        "mid_long": 1.0471637407130687
+        "short_mid": 1.0947198816837163,
+        "short_long": 1.0616041051770044,
+        "mid_long": 0.9697495431837972
       }
     },
     "ETH": {
       "short": {
-        "instrument": "ETH-13MAR26-1750-P",
+        "instrument": "ETH-13MAR26-1700-P",
         "expiry": "2026-03-13",
         "days": 6,
-        "strike": 1750.0,
-        "price": 0.005804,
-        "iv": 91.94,
-        "daily_price": 0.0009673333333333334
+        "strike": 1700.0,
+        "price": 0.005802,
+        "iv": 95.55,
+        "daily_price": 0.000967
       },
       "mid": {
-        "instrument": "ETH-20MAR26-1750-P",
+        "instrument": "ETH-20MAR26-1700-P",
         "expiry": "2026-03-20",
         "days": 13,
-        "strike": 1750.0,
-        "price": 0.013584,
-        "iv": 84.38,
-        "daily_price": 0.001044923076923077
+        "strike": 1700.0,
+        "price": 0.013515,
+        "iv": 87.17,
+        "daily_price": 0.0010396153846153845
       },
       "long": {
         "instrument": "ETH-24APR26-1850-P",
         "expiry": "2026-04-24",
         "days": 48,
         "strike": 1850.0,
-        "price": 0.060276,
-        "iv": 74.22,
-        "daily_price": 0.0012557500000000001
+        "price": 0.06848,
+        "iv": 74.38,
+        "daily_price": 0.0014266666666666666
       },
       "ratios": {
-        "short_mid": 0.9257459756576365,
-        "short_long": 0.7703231800384895,
-        "mid_long": 0.8321107520788985
+        "short_mid": 0.9301516833148354,
+        "short_long": 0.6778037383177571,
+        "mid_long": 0.7287023723939612
       }
     }
   },

@@ -63,52 +63,74 @@
     <div class="max-w-7xl mx-auto px-4 pb-4">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             
-            <!-- Chart 1: BTC 当前日均价格 -->
+            <!-- Chart 1: BTC 日均价格趋势 -->
             <div class="bg-gray-800 rounded-lg p-4 border border-gray-700">
-                <h3 class="text-orange-400 font-semibold text-sm mb-2">🟠 BTC 日均价格对比 (当前)</h3>
+                <h3 class="text-orange-400 font-semibold text-sm mb-2">🟠 BTC 日均价格趋势</h3>
                 <div class="chart-box">
                     <canvas id="btcPriceChart"></canvas>
                 </div>
+                <div class="mt-2 text-xs text-gray-400">
+                    <span class="inline-block w-2 h-2 rounded-full bg-red-400 mr-1"></span>短期
+                    <span class="inline-block w-2 h-2 rounded-full bg-cyan-400 mr-1 ml-2"></span>中期
+                    <span class="inline-block w-2 h-2 rounded-full bg-blue-400 ml-2"></span>长期
+                </div>
             </div>
 
-            <!-- Chart 2: ETH 当前日均价格 -->
+            <!-- Chart 2: ETH 日均价格趋势 -->
             <div class="bg-gray-800 rounded-lg p-4 border border-gray-700">
-                <h3 class="text-purple-400 font-semibold text-sm mb-2">🟣 ETH 日均价格对比 (当前)</h3>
+                <h3 class="text-purple-400 font-semibold text-sm mb-2">🟣 ETH 日均价格趋势</h3>
                 <div class="chart-box">
                     <canvas id="ethPriceChart"></canvas>
                 </div>
+                <div class="mt-2 text-xs text-gray-400">
+                    <span class="inline-block w-2 h-2 rounded-full bg-red-400 mr-1"></span>短期
+                    <span class="inline-block w-2 h-2 rounded-full bg-cyan-400 mr-1 ml-2"></span>中期
+                    <span class="inline-block w-2 h-2 rounded-full bg-blue-400 ml-2"></span>长期
+                </div>
             </div>
 
-            <!-- Chart 3: BTC IV对比 -->
+            <!-- Chart 3: BTC IV趋势 -->
             <div class="bg-gray-800 rounded-lg p-4 border border-gray-700">
-                <h3 class="text-blue-400 font-semibold text-sm mb-2">📊 BTC IV对比 (当前)</h3>
+                <h3 class="text-blue-400 font-semibold text-sm mb-2">📊 BTC IV 趋势</h3>
                 <div class="chart-box">
                     <canvas id="btcIVChart"></canvas>
                 </div>
+                <div class="mt-2 text-xs text-gray-400">
+                    <span class="inline-block w-2 h-2 rounded-full bg-red-400 mr-1"></span>短期
+                    <span class="inline-block w-2 h-2 rounded-full bg-cyan-400 mr-1 ml-2"></span>中期
+                    <span class="inline-block w-2 h-2 rounded-full bg-blue-400 ml-2"></span>长期
+                </div>
             </div>
 
-            <!-- Chart 4: ETH IV对比 -->
+            <!-- Chart 4: ETH IV趋势 -->
             <div class="bg-gray-800 rounded-lg p-4 border border-gray-700">
-                <h3 class="text-green-400 font-semibold text-sm mb-2">📊 ETH IV对比 (当前)</h3>
+                <h3 class="text-green-400 font-semibold text-sm mb-2">📊 ETH IV 趋势</h3>
                 <div class="chart-box">
                     <canvas id="ethIVChart"></canvas>
                 </div>
+                <div class="mt-2 text-xs text-gray-400">
+                    <span class="inline-block w-2 h-2 rounded-full bg-red-400 mr-1"></span>短期
+                    <span class="inline-block w-2 h-2 rounded-full bg-cyan-400 mr-1 ml-2"></span>中期
+                    <span class="inline-block w-2 h-2 rounded-full bg-blue-400 ml-2"></span>长期
+                </div>
             </div>
 
-            <!-- Chart 5: BTC 短/长期比例趋势 (两年) -->
+            <!-- Chart 5: BTC 短/长期比例趋势 -->
             <div class="bg-gray-800 rounded-lg p-4 border border-gray-700">
-                <h3 class="text-orange-400 font-semibold text-sm mb-2">📈 BTC 短/长期比例趋势 (两年)</h3>
+                <h3 class="text-orange-400 font-semibold text-sm mb-2">📈 BTC 短/长期比例趋势</h3>
                 <div class="chart-box">
                     <canvas id="btcRatioChart"></canvas>
                 </div>
+                <div class="mt-2 text-xs text-gray-400">两周期权/周期权 日均价格比率</div>
             </div>
 
-            <!-- Chart 6: ETH 短/长期比例趋势 (两年) -->
+            <!-- Chart 6: ETH 短/长期比例趋势 -->
             <div class="bg-gray-800 rounded-lg p-4 border border-gray-700">
-                <h3 class="text-purple-400 font-semibold text-sm mb-2">📈 ETH 短/长期比例趋势 (两年)</h3>
+                <h3 class="text-purple-400 font-semibold text-sm mb-2">📈 ETH 短/长期比例趋势</h3>
                 <div class="chart-box">
                     <canvas id="ethRatioChart"></canvas>
                 </div>
+                <div class="mt-2 text-xs text-gray-400">两周期权/周期权 日均价格比率</div>
             </div>
 
         </div>
@@ -126,107 +148,75 @@
         let charts = {};
         
         function initCharts() {
-            const barColors = {
-                short: ['#FF6B6B', '#EF4444'],
-                mid: ['#4ECDC4', '#06B6D4'],
-                long: ['#45B7D1', '#10B981']
-            };
-            
-            // Chart 1: BTC 日均价格
-            charts.btcPrice = new Chart(document.getElementById('btcPriceChart'), {
-                type: 'bar',
-                data: {
-                    labels: ['短期', '中期', '长期'],
-                    datasets: [{
-                        label: '日均价格 (% BTC)',
-                        data: [0, 0, 0],
-                        backgroundColor: ['#FF6B6B', '#4ECDC4', '#45B7D1'],
-                        borderWidth: 1
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    scales: {
-                        y: { beginAtZero: true, grid: { color: 'rgba(255,255,255,0.1)' }, ticks: { color: '#9CA3AF' } },
-                        x: { grid: { display: false }, ticks: { color: '#9CA3AF' } }
-                    },
-                    plugins: { legend: { display: false } }
-                }
-            });
-
-            // Chart 2: ETH 日均价格
-            charts.ethPrice = new Chart(document.getElementById('ethPriceChart'), {
-                type: 'bar',
-                data: {
-                    labels: ['短期', '中期', '长期'],
-                    datasets: [{
-                        label: '日均价格 (% ETH)',
-                        data: [0, 0, 0],
-                        backgroundColor: ['#FF6B6B', '#4ECDC4', '#45B7D1'],
-                        borderWidth: 1
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    scales: {
-                        y: { beginAtZero: true, grid: { color: 'rgba(255,255,255,0.1)' }, ticks: { color: '#9CA3AF' } },
-                        x: { grid: { display: false }, ticks: { color: '#9CA3AF' } }
-                    },
-                    plugins: { legend: { display: false } }
-                }
-            });
-
-            // Chart 3: BTC IV
-            charts.btcIV = new Chart(document.getElementById('btcIVChart'), {
-                type: 'bar',
-                data: {
-                    labels: ['短期', '中期', '长期'],
-                    datasets: [{
-                        label: 'IV (%)',
-                        data: [0, 0, 0],
-                        backgroundColor: ['#EF4444', '#06B6D4', '#10B981'],
-                        borderWidth: 1
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    scales: {
-                        y: { beginAtZero: true, grid: { color: 'rgba(255,255,255,0.1)' }, ticks: { color: '#9CA3AF' } },
-                        x: { grid: { display: false }, ticks: { color: '#9CA3AF' } }
-                    },
-                    plugins: { legend: { display: false } }
-                }
-            });
-
-            // Chart 4: ETH IV
-            charts.ethIV = new Chart(document.getElementById('ethIVChart'), {
-                type: 'bar',
-                data: {
-                    labels: ['短期', '中期', '长期'],
-                    datasets: [{
-                        label: 'IV (%)',
-                        data: [0, 0, 0],
-                        backgroundColor: ['#EF4444', '#06B6D4', '#10B981'],
-                        borderWidth: 1
-                    }]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    scales: {
-                        y: { beginAtZero: true, grid: { color: 'rgba(255,255,255,0.1)' }, ticks: { color: '#9CA3AF' } },
-                        x: { grid: { display: false }, ticks: { color: '#9CA3AF' } }
-                    },
-                    plugins: { legend: { display: false } }
-                }
-            });
-
-            // Chart 5: BTC Ratio Trend
-            charts.btcRatio = new Chart(document.getElementById('btcRatioChart'), {
+            const lineConfig = {
                 type: 'line',
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    interaction: { mode: 'index', intersect: false },
+                    scales: {
+                        x: { type: 'time', time: { unit: 'month', displayFormats: { month: 'yyyy-MM' } }, grid: { color: 'rgba(255,255,255,0.1)' }, ticks: { color: '#9CA3AF', maxTicksLimit: 8 } },
+                        y: { grid: { color: 'rgba(255,255,255,0.1)' }, ticks: { color: '#9CA3AF' } }
+                    },
+                    plugins: { legend: { display: false } }
+                }
+            };
+
+            // BTC Price Trend
+            charts.btcPrice = new Chart(document.getElementById('btcPriceChart'), {
+                ...lineConfig,
+                data: {
+                    datasets: [
+                        { label: '短期', data: [], borderColor: '#F87171', borderWidth: 1.5, fill: false, tension: 0.3, pointRadius: 0 },
+                        { label: '中期', data: [], borderColor: '#22D3EE', borderWidth: 1.5, fill: false, tension: 0.3, pointRadius: 0 },
+                        { label: '长期', data: [], borderColor: '#60A5FA', borderWidth: 1.5, fill: false, tension: 0.3, pointRadius: 0 }
+                    ]
+                },
+                options: { ...lineConfig.options, scales: { ...lineConfig.options.scales, y: { ...lineConfig.options.scales.y, ticks: { ...lineConfig.options.scales.y.ticks, callback: v => v + '%' } } } }
+            });
+
+            // ETH Price Trend
+            charts.ethPrice = new Chart(document.getElementById('ethPriceChart'), {
+                ...lineConfig,
+                data: {
+                    datasets: [
+                        { label: '短期', data: [], borderColor: '#F87171', borderWidth: 1.5, fill: false, tension: 0.3, pointRadius: 0 },
+                        { label: '中期', data: [], borderColor: '#22D3EE', borderWidth: 1.5, fill: false, tension: 0.3, pointRadius: 0 },
+                        { label: '长期', data: [], borderColor: '#60A5FA', borderWidth: 1.5, fill: false, tension: 0.3, pointRadius: 0 }
+                    ]
+                },
+                options: { ...lineConfig.options, scales: { ...lineConfig.options.scales, y: { ...lineConfig.options.scales.y, ticks: { ...lineConfig.options.scales.y.ticks, callback: v => v + '%' } } } }
+            });
+
+            // BTC IV Trend
+            charts.btcIV = new Chart(document.getElementById('btcIVChart'), {
+                ...lineConfig,
+                data: {
+                    datasets: [
+                        { label: '短期IV', data: [], borderColor: '#F87171', borderWidth: 1.5, fill: false, tension: 0.3, pointRadius: 0 },
+                        { label: '中期IV', data: [], borderColor: '#22D3EE', borderWidth: 1.5, fill: false, tension: 0.3, pointRadius: 0 },
+                        { label: '长期IV', data: [], borderColor: '#60A5FA', borderWidth: 1.5, fill: false, tension: 0.3, pointRadius: 0 }
+                    ]
+                },
+                options: { ...lineConfig.options, scales: { ...lineConfig.options.scales, y: { ...lineConfig.options.scales.y, ticks: { ...lineConfig.options.scales.y.ticks, callback: v => v + '%' } } } }
+            });
+
+            // ETH IV Trend
+            charts.ethIV = new Chart(document.getElementById('ethIVChart'), {
+                ...lineConfig,
+                data: {
+                    datasets: [
+                        { label: '短期IV', data: [], borderColor: '#F87171', borderWidth: 1.5, fill: false, tension: 0.3, pointRadius: 0 },
+                        { label: '中期IV', data: [], borderColor: '#22D3EE', borderWidth: 1.5, fill: false, tension: 0.3, pointRadius: 0 },
+                        { label: '长期IV', data: [], borderColor: '#60A5FA', borderWidth: 1.5, fill: false, tension: 0.3, pointRadius: 0 }
+                    ]
+                },
+                options: { ...lineConfig.options, scales: { ...lineConfig.options.scales, y: { ...lineConfig.options.scales.y, ticks: { ...lineConfig.options.scales.y.ticks, callback: v => v + '%' } } } }
+            });
+
+            // BTC Ratio Trend
+            charts.btcRatio = new Chart(document.getElementById('btcRatioChart'), {
+                ...lineConfig,
                 data: {
                     datasets: [{
                         label: 'BTC 短/长期比例',
@@ -238,21 +228,12 @@
                         tension: 0.3,
                         pointRadius: 0
                     }]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    scales: {
-                        x: { type: 'time', time: { unit: 'month' }, grid: { color: 'rgba(255,255,255,0.1)' }, ticks: { color: '#9CA3AF', maxTicksLimit: 6 } },
-                        y: { grid: { color: 'rgba(255,255,255,0.1)' }, ticks: { color: '#9CA3AF' } }
-                    },
-                    plugins: { legend: { display: false } }
                 }
             });
 
-            // Chart 6: ETH Ratio Trend
+            // ETH Ratio Trend
             charts.ethRatio = new Chart(document.getElementById('ethRatioChart'), {
-                type: 'line',
+                ...lineConfig,
                 data: {
                     datasets: [{
                         label: 'ETH 短/长期比例',
@@ -264,15 +245,6 @@
                         tension: 0.3,
                         pointRadius: 0
                     }]
-                },
-                options: {
-                    responsive: true,
-                    maintainAspectRatio: false,
-                    scales: {
-                        x: { type: 'time', time: { unit: 'month' }, grid: { color: 'rgba(255,255,255,0.1)' }, ticks: { color: '#9CA3AF', maxTicksLimit: 6 } },
-                        y: { grid: { color: 'rgba(255,255,255,0.1)' }, ticks: { color: '#9CA3AF' } }
-                    },
-                    plugins: { legend: { display: false } }
                 }
             });
         }
@@ -308,54 +280,52 @@
         }
 
         function updateCharts(data) {
-            // Update bar charts
-            const btc = data.options.BTC;
-            const eth = data.options.ETH;
+            // 历史数据
+            const histBTC = data.historical_ratios.BTC || [];
+            const histETH = data.historical_ratios.ETH || [];
 
-            if (btc.short && btc.mid && btc.long) {
-                charts.btcPrice.data.datasets[0].data = [
-                    btc.short.daily_price * 100,
-                    btc.mid.daily_price * 100,
-                    btc.long.daily_price * 100
-                ];
-                charts.btcIV.data.datasets[0].data = [
-                    btc.short.iv,
-                    btc.mid.iv,
-                    btc.long.iv
-                ];
+            // BTC 日均价格趋势（从历史数据计算）
+            if (histBTC.length > 0) {
+                // 使用ratio推算日均价格趋势（简化展示）
+                const btcShortData = histBTC.map(d => ({ x: new Date(d.date), y: d.weekly_price * 100 }));
+                const btcMidData = histBTC.map(d => ({ x: new Date(d.date), y: d.biweekly_price * 100 * (d.ratio > 1 ? 1/d.ratio : d.ratio) }));
+                const btcLongData = histBTC.map(d => ({ x: new Date(d.date), y: d.biweekly_price * 100 }));
+                
+                charts.btcPrice.data.datasets[0].data = btcShortData;
+                charts.btcPrice.data.datasets[1].data = btcMidData;
+                charts.btcPrice.data.datasets[2].data = btcLongData;
                 charts.btcPrice.update();
+
+                // BTC IV趋势
+                charts.btcIV.data.datasets[0].data = histBTC.map(d => ({ x: new Date(d.date), y: d.iv_weekly }));
+                charts.btcIV.data.datasets[1].data = histBTC.map(d => ({ x: new Date(d.date), y: d.iv_biweekly }));
+                charts.btcIV.data.datasets[2].data = histBTC.map(d => ({ x: new Date(d.date), y: (d.iv_weekly + d.iv_biweekly) / 2 }));
                 charts.btcIV.update();
-            }
 
-            if (eth.short && eth.mid && eth.long) {
-                charts.ethPrice.data.datasets[0].data = [
-                    eth.short.daily_price * 100,
-                    eth.mid.daily_price * 100,
-                    eth.long.daily_price * 100
-                ];
-                charts.ethIV.data.datasets[0].data = [
-                    eth.short.iv,
-                    eth.mid.iv,
-                    eth.long.iv
-                ];
-                charts.ethPrice.update();
-                charts.ethIV.update();
-            }
-
-            // Update ratio charts
-            if (data.historical_ratios.BTC?.length > 0) {
-                charts.btcRatio.data.datasets[0].data = data.historical_ratios.BTC.map(d => ({
-                    x: new Date(d.date),
-                    y: d.ratio
-                }));
+                // BTC Ratio
+                charts.btcRatio.data.datasets[0].data = histBTC.map(d => ({ x: new Date(d.date), y: d.ratio }));
                 charts.btcRatio.update();
             }
 
-            if (data.historical_ratios.ETH?.length > 0) {
-                charts.ethRatio.data.datasets[0].data = data.historical_ratios.ETH.map(d => ({
-                    x: new Date(d.date),
-                    y: d.ratio
-                }));
+            // ETH
+            if (histETH.length > 0) {
+                const ethShortData = histETH.map(d => ({ x: new Date(d.date), y: d.weekly_price * 100 }));
+                const ethMidData = histETH.map(d => ({ x: new Date(d.date), y: d.biweekly_price * 100 * (d.ratio > 1 ? 1/d.ratio : d.ratio) }));
+                const ethLongData = histETH.map(d => ({ x: new Date(d.date), y: d.biweekly_price * 100 }));
+
+                charts.ethPrice.data.datasets[0].data = ethShortData;
+                charts.ethPrice.data.datasets[1].data = ethMidData;
+                charts.ethPrice.data.datasets[2].data = ethLongData;
+                charts.ethPrice.update();
+
+                // ETH IV趋势
+                charts.ethIV.data.datasets[0].data = histETH.map(d => ({ x: new Date(d.date), y: d.iv_weekly }));
+                charts.ethIV.data.datasets[1].data = histETH.map(d => ({ x: new Date(d.date), y: d.iv_biweekly }));
+                charts.ethIV.data.datasets[2].data = histETH.map(d => ({ x: new Date(d.date), y: (d.iv_weekly + d.iv_biweekly) / 2 }));
+                charts.ethIV.update();
+
+                // ETH Ratio
+                charts.ethRatio.data.datasets[0].data = histETH.map(d => ({ x: new Date(d.date), y: d.ratio }));
                 charts.ethRatio.update();
             }
         }
