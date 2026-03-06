@@ -174,23 +174,26 @@ def main():
             'daily_price': price / days if days > 0 else 0
         })
     
-    # 筛选目标期权
+    # 筛选目标期权 - 调整为接近30天的三档
     btc_target = btc_price * 0.90 if btc_price else 65000
     eth_target = eth_price * 0.85 if eth_price else 1700
     
-    btc_short = min([p for p in btc_puts if 3 <= p['days'] <= 7 and abs(p['strike'] - btc_target) / btc_target < 0.1], 
+    # 短期: 5-9天, 中期: 12-16天, 长期: 25-65天(选最接近30天的)
+    btc_short = min([p for p in btc_puts if 5 <= p['days'] <= 9 and abs(p['strike'] - btc_target) / btc_target < 0.1], 
                     key=lambda x: abs(x['strike'] - btc_target), default=None)
-    btc_mid = min([p for p in btc_puts if 8 <= p['days'] <= 14 and abs(p['strike'] - btc_target) / btc_target < 0.1], 
+    btc_mid = min([p for p in btc_puts if 12 <= p['days'] <= 16 and abs(p['strike'] - btc_target) / btc_target < 0.1], 
                   key=lambda x: abs(x['strike'] - btc_target), default=None)
-    btc_long = min([p for p in btc_puts if 20 <= p['days'] <= 35 and abs(p['strike'] - btc_target) / btc_target < 0.1], 
-                   key=lambda x: abs(x['strike'] - btc_target), default=None)
+    # 长期: 25-65天范围内优先选择最接近30天的
+    btc_long_candidates = [p for p in btc_puts if 25 <= p['days'] <= 65 and abs(p['strike'] - btc_target) / btc_target < 0.1]
+    btc_long = min(btc_long_candidates, key=lambda x: abs(x['days'] - 30), default=None) if btc_long_candidates else None
     
-    eth_short = min([p for p in eth_puts if 3 <= p['days'] <= 7 and abs(p['strike'] - eth_target) / eth_target < 0.1], 
+    eth_short = min([p for p in eth_puts if 5 <= p['days'] <= 9 and abs(p['strike'] - eth_target) / eth_target < 0.1], 
                     key=lambda x: abs(x['strike'] - eth_target), default=None)
-    eth_mid = min([p for p in eth_puts if 8 <= p['days'] <= 14 and abs(p['strike'] - eth_target) / eth_target < 0.1], 
+    eth_mid = min([p for p in eth_puts if 12 <= p['days'] <= 16 and abs(p['strike'] - eth_target) / eth_target < 0.1], 
                   key=lambda x: abs(x['strike'] - eth_target), default=None)
-    eth_long = min([p for p in eth_puts if 20 <= p['days'] <= 35 and abs(p['strike'] - eth_target) / eth_target < 0.1], 
-                   key=lambda x: abs(x['strike'] - eth_target), default=None)
+    # 长期: 25-65天范围内优先选择最接近30天的
+    eth_long_candidates = [p for p in eth_puts if 25 <= p['days'] <= 65 and abs(p['strike'] - eth_target) / eth_target < 0.1]
+    eth_long = min(eth_long_candidates, key=lambda x: abs(x['days'] - 30), default=None) if eth_long_candidates else None
     
     # 加载历史数据并计算比率
     hist_data = load_historical_data()
