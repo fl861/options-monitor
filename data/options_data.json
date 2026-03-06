@@ -1,0 +1,3035 @@
+{
+  "timestamp": "2026-03-06 17:47:53",
+  "spot_prices": {
+    "BTC": 72599.01,
+    "ETH": 2066.9366666666665
+  },
+  "options": {
+    "BTC": {
+      "short": {
+        "instrument": "BTC-13MAR26-65000-P",
+        "expiry": "2026-03-13",
+        "days": 6,
+        "strike": 65000.0,
+        "price": 0.00707532,
+        "iv": 60.63,
+        "daily_price": 0.0011792200000000001
+      },
+      "mid": {
+        "instrument": "BTC-20MAR26-65000-P",
+        "expiry": "2026-03-20",
+        "days": 13,
+        "strike": 65000.0,
+        "price": 0.01531161,
+        "iv": 58.51,
+        "daily_price": 0.0011778161538461538
+      },
+      "long": {
+        "instrument": "BTC-27MAR26-65000-P",
+        "expiry": "2026-03-27",
+        "days": 20,
+        "strike": 65000.0,
+        "price": 0.02197661,
+        "iv": 57.01,
+        "daily_price": 0.0010988305
+      },
+      "ratios": {
+        "short_mid": 1.0011919060111902,
+        "short_long": 1.0731591451092777,
+        "mid_long": 1.071881563031017
+      }
+    },
+    "ETH": {
+      "short": {
+        "instrument": "ETH-13MAR26-1750-P",
+        "expiry": "2026-03-13",
+        "days": 6,
+        "strike": 1750.0,
+        "price": 0.005705,
+        "iv": 91.78,
+        "daily_price": 0.0009508333333333334
+      },
+      "mid": {
+        "instrument": "ETH-20MAR26-1750-P",
+        "expiry": "2026-03-20",
+        "days": 13,
+        "strike": 1750.0,
+        "price": 0.01328,
+        "iv": 84.34,
+        "daily_price": 0.0010215384615384615
+      },
+      "long": {
+        "instrument": "ETH-27MAR26-1750-P",
+        "expiry": "2026-03-27",
+        "days": 20,
+        "strike": 1750.0,
+        "price": 0.020723,
+        "iv": 81.76,
+        "daily_price": 0.00103615
+      },
+      "ratios": {
+        "short_mid": 0.9307856425702812,
+        "short_long": 0.9176599269732504,
+        "mid_long": 0.9858982401567934
+      }
+    }
+  },
+  "historical_ratios": {
+    "BTC": [
+      {
+        "date": "2023-01-07",
+        "ratio": 2.5,
+        "weekly_price": 0.001,
+        "biweekly_price": 0.0025,
+        "iv_weekly": 49.5,
+        "iv_biweekly": 41.8,
+        "index": 16848.09
+      },
+      {
+        "date": "2023-01-14",
+        "ratio": 2.3,
+        "weekly_price": 0.005,
+        "biweekly_price": 0.0115,
+        "iv_weekly": 65.8,
+        "iv_biweekly": 60.5,
+        "index": 19890.88
+      },
+      {
+        "date": "2023-01-21",
+        "ratio": 2.625,
+        "weekly_price": 0.004,
+        "biweekly_price": 0.0105,
+        "iv_weekly": 62.5,
+        "iv_biweekly": 58.0,
+        "index": 22663.88
+      },
+      {
+        "date": "2023-01-28",
+        "ratio": 2.429,
+        "weekly_price": 0.0035,
+        "biweekly_price": 0.0085,
+        "iv_weekly": 57.0,
+        "iv_biweekly": 53.2,
+        "index": 23075.65
+      },
+      {
+        "date": "2023-02-04",
+        "ratio": 4.0,
+        "weekly_price": 0.002,
+        "biweekly_price": 0.008,
+        "iv_weekly": 56.2,
+        "iv_biweekly": 55.0,
+        "index": 23453.77
+      },
+      {
+        "date": "2023-02-11",
+        "ratio": 2.6,
+        "weekly_price": 0.0025,
+        "biweekly_price": 0.0065,
+        "iv_weekly": 56.3,
+        "iv_biweekly": 51.5,
+        "index": 21692.76
+      },
+      {
+        "date": "2023-02-18",
+        "ratio": 1.778,
+        "weekly_price": 0.0045,
+        "biweekly_price": 0.008,
+        "iv_weekly": 68.9,
+        "iv_biweekly": 60.9,
+        "index": 24553.18
+      },
+      {
+        "date": "2023-02-25",
+        "ratio": 3.5,
+        "weekly_price": 0.002,
+        "biweekly_price": 0.007,
+        "iv_weekly": 50.6,
+        "iv_biweekly": 50.7,
+        "index": 23167.08
+      },
+      {
+        "date": "2023-03-04",
+        "ratio": 3.25,
+        "weekly_price": 0.002,
+        "biweekly_price": 0.0065,
+        "iv_weekly": 56.4,
+        "iv_biweekly": 53.4,
+        "index": 22363.42
+      },
+      {
+        "date": "2023-03-11",
+        "ratio": 2.0,
+        "weekly_price": 0.005,
+        "biweekly_price": 0.01,
+        "iv_weekly": 71.5,
+        "iv_biweekly": 63.7,
+        "index": 20175.96
+      },
+      {
+        "date": "2023-03-18",
+        "ratio": 1.667,
+        "weekly_price": 0.0075,
+        "biweekly_price": 0.0125,
+        "iv_weekly": 82.0,
+        "iv_biweekly": 67.6,
+        "index": 27445.79
+      },
+      {
+        "date": "2023-03-25",
+        "ratio": 2.167,
+        "weekly_price": 0.006,
+        "biweekly_price": 0.013,
+        "iv_weekly": 69.7,
+        "iv_biweekly": 63.3,
+        "index": 27147.26
+      },
+      {
+        "date": "2023-04-01",
+        "ratio": 3.0,
+        "weekly_price": 0.003,
+        "biweekly_price": 0.009,
+        "iv_weekly": 62.9,
+        "iv_biweekly": 59.5,
+        "index": 28549.51
+      },
+      {
+        "date": "2023-04-08",
+        "ratio": 3.25,
+        "weekly_price": 0.002,
+        "biweekly_price": 0.0065,
+        "iv_weekly": 55.8,
+        "iv_biweekly": 53.3,
+        "index": 27938.16
+      },
+      {
+        "date": "2023-04-15",
+        "ratio": 1.8,
+        "weekly_price": 0.0025,
+        "biweekly_price": 0.0045,
+        "iv_weekly": 54.1,
+        "iv_biweekly": 50.5,
+        "index": 30405.7
+      },
+      {
+        "date": "2023-04-22",
+        "ratio": 2.25,
+        "weekly_price": 0.004,
+        "biweekly_price": 0.009,
+        "iv_weekly": 56.2,
+        "iv_biweekly": 56.6,
+        "index": 27316.83
+      },
+      {
+        "date": "2023-04-29",
+        "ratio": 3.0,
+        "weekly_price": 0.002,
+        "biweekly_price": 0.006,
+        "iv_weekly": 52.5,
+        "iv_biweekly": 49.7,
+        "index": 29376.17
+      },
+      {
+        "date": "2023-05-06",
+        "ratio": 3.0,
+        "weekly_price": 0.002,
+        "biweekly_price": 0.006,
+        "iv_weekly": 54.1,
+        "iv_biweekly": 52.1,
+        "index": 29519.78
+      },
+      {
+        "date": "2023-05-13",
+        "ratio": 3.25,
+        "weekly_price": 0.002,
+        "biweekly_price": 0.0065,
+        "iv_weekly": 54.6,
+        "iv_biweekly": 52.5,
+        "index": 26740.95
+      },
+      {
+        "date": "2023-05-20",
+        "ratio": 3.0,
+        "weekly_price": 0.0015,
+        "biweekly_price": 0.0045,
+        "iv_weekly": 53.0,
+        "iv_biweekly": 48.7,
+        "index": 26906.16
+      },
+      {
+        "date": "2023-05-27",
+        "ratio": 3.333,
+        "weekly_price": 0.0015,
+        "biweekly_price": 0.005,
+        "iv_weekly": 50.9,
+        "iv_biweekly": 47.8,
+        "index": 26711.61
+      },
+      {
+        "date": "2023-06-03",
+        "ratio": 4.0,
+        "weekly_price": 0.001,
+        "biweekly_price": 0.004,
+        "iv_weekly": 46.7,
+        "iv_biweekly": 44.9,
+        "index": 27219.75
+      },
+      {
+        "date": "2023-06-10",
+        "ratio": 3.333,
+        "weekly_price": 0.0015,
+        "biweekly_price": 0.005,
+        "iv_weekly": 47.9,
+        "iv_biweekly": 43.9,
+        "index": 26464.49
+      },
+      {
+        "date": "2023-06-17",
+        "ratio": 3.0,
+        "weekly_price": 0.002,
+        "biweekly_price": 0.006,
+        "iv_weekly": 57.1,
+        "iv_biweekly": 53.2,
+        "index": 26322.94
+      },
+      {
+        "date": "2023-06-24",
+        "ratio": 2.8,
+        "weekly_price": 0.0025,
+        "biweekly_price": 0.007,
+        "iv_weekly": 57.2,
+        "iv_biweekly": 52.9,
+        "index": 30570.05
+      },
+      {
+        "date": "2023-07-01",
+        "ratio": 5.0,
+        "weekly_price": 0.001,
+        "biweekly_price": 0.005,
+        "iv_weekly": 43.4,
+        "iv_biweekly": 44.8,
+        "index": 30311.44
+      },
+      {
+        "date": "2023-07-08",
+        "ratio": 1.75,
+        "weekly_price": 0.0016,
+        "biweekly_price": 0.0028,
+        "iv_weekly": 48.0,
+        "iv_biweekly": 43.8,
+        "index": 30356.01
+      },
+      {
+        "date": "2023-07-15",
+        "ratio": 3.333,
+        "weekly_price": 0.0012,
+        "biweekly_price": 0.004,
+        "iv_weekly": 47.8,
+        "iv_biweekly": 45.0,
+        "index": 30312.07
+      },
+      {
+        "date": "2023-07-22",
+        "ratio": 1.615,
+        "weekly_price": 0.0013,
+        "biweekly_price": 0.0021,
+        "iv_weekly": 48.3,
+        "iv_biweekly": 37.8,
+        "index": 29918.68
+      },
+      {
+        "date": "2023-07-29",
+        "ratio": 5.75,
+        "weekly_price": 0.0004,
+        "biweekly_price": 0.0023,
+        "iv_weekly": 39.4,
+        "iv_biweekly": 36.1,
+        "index": 29300.41
+      },
+      {
+        "date": "2023-08-05",
+        "ratio": 1.857,
+        "weekly_price": 0.0007,
+        "biweekly_price": 0.0013,
+        "iv_weekly": 38.5,
+        "iv_biweekly": 36.2,
+        "index": 29003.4
+      },
+      {
+        "date": "2023-08-12",
+        "ratio": 2.4,
+        "weekly_price": 0.0005,
+        "biweekly_price": 0.0012,
+        "iv_weekly": 42.7,
+        "iv_biweekly": 38.6,
+        "index": 29402.42
+      },
+      {
+        "date": "2023-08-19",
+        "ratio": 2.5,
+        "weekly_price": 0.0026,
+        "biweekly_price": 0.0065,
+        "iv_weekly": 64.8,
+        "iv_biweekly": 52.0,
+        "index": 26049.16
+      },
+      {
+        "date": "2023-08-26",
+        "ratio": 2.5,
+        "weekly_price": 0.0014,
+        "biweekly_price": 0.0035,
+        "iv_weekly": 45.5,
+        "iv_biweekly": 39.3,
+        "index": 25865.65
+      },
+      {
+        "date": "2023-09-02",
+        "ratio": 3.75,
+        "weekly_price": 0.0008,
+        "biweekly_price": 0.003,
+        "iv_weekly": 47.0,
+        "iv_biweekly": 42.4,
+        "index": 25751.34
+      },
+      {
+        "date": "2023-09-09",
+        "ratio": 2.8,
+        "weekly_price": 0.001,
+        "biweekly_price": 0.0028,
+        "iv_weekly": 45.9,
+        "iv_biweekly": 44.7,
+        "index": 25893.8
+      },
+      {
+        "date": "2023-09-16",
+        "ratio": 2.692,
+        "weekly_price": 0.0013,
+        "biweekly_price": 0.0035,
+        "iv_weekly": 49.3,
+        "iv_biweekly": 44.0,
+        "index": 26684.94
+      },
+      {
+        "date": "2023-09-23",
+        "ratio": 2.727,
+        "weekly_price": 0.0011,
+        "biweekly_price": 0.003,
+        "iv_weekly": 48.4,
+        "iv_biweekly": 40.1,
+        "index": 26564.56
+      },
+      {
+        "date": "2023-09-30",
+        "ratio": 2.2,
+        "weekly_price": 0.001,
+        "biweekly_price": 0.0022,
+        "iv_weekly": 47.8,
+        "iv_biweekly": 40.6,
+        "index": 26825.07
+      },
+      {
+        "date": "2023-10-07",
+        "ratio": 4.6,
+        "weekly_price": 0.0005,
+        "biweekly_price": 0.0023,
+        "iv_weekly": 44.8,
+        "iv_biweekly": 39.0,
+        "index": 28105.01
+      },
+      {
+        "date": "2023-10-14",
+        "ratio": 2.8,
+        "weekly_price": 0.001,
+        "biweekly_price": 0.0028,
+        "iv_weekly": 43.0,
+        "iv_biweekly": 42.8,
+        "index": 26954.29
+      },
+      {
+        "date": "2023-10-21",
+        "ratio": 2.636,
+        "weekly_price": 0.0011,
+        "biweekly_price": 0.0029,
+        "iv_weekly": 49.8,
+        "iv_biweekly": 43.7,
+        "index": 29643.12
+      },
+      {
+        "date": "2023-10-28",
+        "ratio": 2.667,
+        "weekly_price": 0.0015,
+        "biweekly_price": 0.004,
+        "iv_weekly": 49.7,
+        "iv_biweekly": 45.1,
+        "index": 33813.69
+      },
+      {
+        "date": "2023-11-04",
+        "ratio": 3.437,
+        "weekly_price": 0.0016,
+        "biweekly_price": 0.0055,
+        "iv_weekly": 54.0,
+        "iv_biweekly": 52.2,
+        "index": 34678.73
+      },
+      {
+        "date": "2023-11-11",
+        "ratio": 4.0,
+        "weekly_price": 0.002,
+        "biweekly_price": 0.008,
+        "iv_weekly": 56.6,
+        "iv_biweekly": 53.6,
+        "index": 37440.42
+      },
+      {
+        "date": "2023-11-18",
+        "ratio": 3.448,
+        "weekly_price": 0.0029,
+        "biweekly_price": 0.01,
+        "iv_weekly": 57.8,
+        "iv_biweekly": 53.8,
+        "index": 36543.52
+      },
+      {
+        "date": "2023-11-25",
+        "ratio": 3.158,
+        "weekly_price": 0.0019,
+        "biweekly_price": 0.006,
+        "iv_weekly": 53.8,
+        "iv_biweekly": 50.0,
+        "index": 37795.9
+      },
+      {
+        "date": "2023-12-02",
+        "ratio": 5.5,
+        "weekly_price": 0.001,
+        "biweekly_price": 0.0055,
+        "iv_weekly": 45.6,
+        "iv_biweekly": 48.3,
+        "index": 38747.61
+      },
+      {
+        "date": "2023-12-09",
+        "ratio": 2.593,
+        "weekly_price": 0.0027,
+        "biweekly_price": 0.007,
+        "iv_weekly": 55.7,
+        "iv_biweekly": 51.4,
+        "index": 44181.81
+      },
+      {
+        "date": "2023-12-16",
+        "ratio": 2.143,
+        "weekly_price": 0.0028,
+        "biweekly_price": 0.006,
+        "iv_weekly": 54.5,
+        "iv_biweekly": 49.0,
+        "index": 41909.79
+      },
+      {
+        "date": "2023-12-23",
+        "ratio": 5.5,
+        "weekly_price": 0.001,
+        "biweekly_price": 0.0055,
+        "iv_weekly": 48.7,
+        "iv_biweekly": 50.0,
+        "index": 44023.94
+      },
+      {
+        "date": "2023-12-30",
+        "ratio": 7.5,
+        "weekly_price": 0.0016,
+        "biweekly_price": 0.012,
+        "iv_weekly": 56.6,
+        "iv_biweekly": 64.1,
+        "index": 42229.37
+      },
+      {
+        "date": "2024-01-06",
+        "ratio": 1.55,
+        "weekly_price": 0.01,
+        "biweekly_price": 0.0155,
+        "iv_weekly": 81.7,
+        "iv_biweekly": 74.2,
+        "index": 44062.99
+      },
+      {
+        "date": "2024-01-13",
+        "ratio": 2.9,
+        "weekly_price": 0.005,
+        "biweekly_price": 0.0145,
+        "iv_weekly": 75.8,
+        "iv_biweekly": 64.0,
+        "index": 42857.14
+      },
+      {
+        "date": "2024-01-20",
+        "ratio": 2.619,
+        "weekly_price": 0.0021,
+        "biweekly_price": 0.0055,
+        "iv_weekly": 59.9,
+        "iv_biweekly": 53.0,
+        "index": 41670.6
+      },
+      {
+        "date": "2024-01-27",
+        "ratio": 3.917,
+        "weekly_price": 0.0012,
+        "biweekly_price": 0.0047,
+        "iv_weekly": 45.6,
+        "iv_biweekly": 44.1,
+        "index": 41911.97
+      },
+      {
+        "date": "2024-02-03",
+        "ratio": 4.0,
+        "weekly_price": 0.0009,
+        "biweekly_price": 0.0036,
+        "iv_weekly": 44.6,
+        "iv_biweekly": 40.9,
+        "index": 43167.53
+      },
+      {
+        "date": "2024-02-10",
+        "ratio": 2.133,
+        "weekly_price": 0.0015,
+        "biweekly_price": 0.0032,
+        "iv_weekly": 47.4,
+        "iv_biweekly": 45.7,
+        "index": 47401.4
+      },
+      {
+        "date": "2024-02-17",
+        "ratio": 3.684,
+        "weekly_price": 0.0019,
+        "biweekly_price": 0.007,
+        "iv_weekly": 51.8,
+        "iv_biweekly": 53.3,
+        "index": 51996.53
+      },
+      {
+        "date": "2024-02-24",
+        "ratio": 2.308,
+        "weekly_price": 0.0026,
+        "biweekly_price": 0.006,
+        "iv_weekly": 54.7,
+        "iv_biweekly": 49.7,
+        "index": 50788.32
+      },
+      {
+        "date": "2024-03-02",
+        "ratio": 3.03,
+        "weekly_price": 0.0033,
+        "biweekly_price": 0.01,
+        "iv_weekly": 60.7,
+        "iv_biweekly": 62.6,
+        "index": 62704.45
+      },
+      {
+        "date": "2024-03-09",
+        "ratio": 1.8,
+        "weekly_price": 0.0075,
+        "biweekly_price": 0.0135,
+        "iv_weekly": 74.5,
+        "iv_biweekly": 71.1,
+        "index": 68384.63
+      },
+      {
+        "date": "2024-03-16",
+        "ratio": 1.947,
+        "weekly_price": 0.0095,
+        "biweekly_price": 0.0185,
+        "iv_weekly": 83.0,
+        "iv_biweekly": 76.6,
+        "index": 69569.96
+      },
+      {
+        "date": "2024-03-23",
+        "ratio": 1.438,
+        "weekly_price": 0.008,
+        "biweekly_price": 0.0115,
+        "iv_weekly": 73.1,
+        "iv_biweekly": 72.0,
+        "index": 62544.65
+      },
+      {
+        "date": "2024-03-30",
+        "ratio": 2.632,
+        "weekly_price": 0.0038,
+        "biweekly_price": 0.01,
+        "iv_weekly": 61.6,
+        "iv_biweekly": 67.5,
+        "index": 69472.26
+      },
+      {
+        "date": "2024-04-06",
+        "ratio": 2.7,
+        "weekly_price": 0.005,
+        "biweekly_price": 0.0135,
+        "iv_weekly": 69.9,
+        "iv_biweekly": 68.2,
+        "index": 67940.11
+      },
+      {
+        "date": "2024-04-13",
+        "ratio": 2.545,
+        "weekly_price": 0.0055,
+        "biweekly_price": 0.014,
+        "iv_weekly": 72.8,
+        "iv_biweekly": 69.4,
+        "index": 67012.85
+      },
+      {
+        "date": "2024-04-20",
+        "ratio": 2.923,
+        "weekly_price": 0.0065,
+        "biweekly_price": 0.019,
+        "iv_weekly": 78.4,
+        "iv_biweekly": 73.7,
+        "index": 64131.77
+      },
+      {
+        "date": "2024-04-27",
+        "ratio": 1.477,
+        "weekly_price": 0.0044,
+        "biweekly_price": 0.0065,
+        "iv_weekly": 61.6,
+        "iv_biweekly": 54.2,
+        "index": 63941.2
+      },
+      {
+        "date": "2024-05-04",
+        "ratio": 3.393,
+        "weekly_price": 0.0028,
+        "biweekly_price": 0.0095,
+        "iv_weekly": 60.8,
+        "iv_biweekly": 56.0,
+        "index": 62579.94
+      },
+      {
+        "date": "2024-05-11",
+        "ratio": 2.024,
+        "weekly_price": 0.0042,
+        "biweekly_price": 0.0085,
+        "iv_weekly": 60.5,
+        "iv_biweekly": 54.9,
+        "index": 60539.62
+      },
+      {
+        "date": "2024-05-18",
+        "ratio": 2.857,
+        "weekly_price": 0.0021,
+        "biweekly_price": 0.006,
+        "iv_weekly": 56.3,
+        "iv_biweekly": 52.8,
+        "index": 67014.75
+      },
+      {
+        "date": "2024-05-25",
+        "ratio": 2.778,
+        "weekly_price": 0.0018,
+        "biweekly_price": 0.005,
+        "iv_weekly": 53.0,
+        "iv_biweekly": 48.1,
+        "index": 68980.91
+      },
+      {
+        "date": "2024-06-01",
+        "ratio": 4.9,
+        "weekly_price": 0.001,
+        "biweekly_price": 0.0049,
+        "iv_weekly": 52.1,
+        "iv_biweekly": 51.0,
+        "index": 67598.78
+      },
+      {
+        "date": "2024-06-08",
+        "ratio": 3.364,
+        "weekly_price": 0.0011,
+        "biweekly_price": 0.0037,
+        "iv_weekly": 50.4,
+        "iv_biweekly": 46.7,
+        "index": 69353.36
+      },
+      {
+        "date": "2024-06-15",
+        "ratio": 2.857,
+        "weekly_price": 0.0021,
+        "biweekly_price": 0.006,
+        "iv_weekly": 50.6,
+        "iv_biweekly": 47.4,
+        "index": 65991.41
+      },
+      {
+        "date": "2024-06-22",
+        "ratio": 2.75,
+        "weekly_price": 0.002,
+        "biweekly_price": 0.0055,
+        "iv_weekly": 52.0,
+        "iv_biweekly": 46.6,
+        "index": 64135.74
+      },
+      {
+        "date": "2024-06-29",
+        "ratio": 2.7,
+        "weekly_price": 0.001,
+        "biweekly_price": 0.0027,
+        "iv_weekly": 48.7,
+        "iv_biweekly": 44.8,
+        "index": 60300.15
+      },
+      {
+        "date": "2024-07-06",
+        "ratio": 2.143,
+        "weekly_price": 0.0035,
+        "biweekly_price": 0.0075,
+        "iv_weekly": 60.2,
+        "iv_biweekly": 54.1,
+        "index": 56550.25
+      },
+      {
+        "date": "2024-07-13",
+        "ratio": 3.095,
+        "weekly_price": 0.0021,
+        "biweekly_price": 0.0065,
+        "iv_weekly": 55.3,
+        "iv_biweekly": 51.6,
+        "index": 57844.46
+      },
+      {
+        "date": "2024-07-20",
+        "ratio": 3.913,
+        "weekly_price": 0.0023,
+        "biweekly_price": 0.009,
+        "iv_weekly": 58.4,
+        "iv_biweekly": 59.1,
+        "index": 66987.65
+      },
+      {
+        "date": "2024-07-27",
+        "ratio": 2.0,
+        "weekly_price": 0.0045,
+        "biweekly_price": 0.009,
+        "iv_weekly": 68.7,
+        "iv_biweekly": 59.8,
+        "index": 67978.01
+      },
+      {
+        "date": "2024-08-03",
+        "ratio": 4.375,
+        "weekly_price": 0.0024,
+        "biweekly_price": 0.0105,
+        "iv_weekly": 59.5,
+        "iv_biweekly": 55.1,
+        "index": 62832.22
+      },
+      {
+        "date": "2024-08-10",
+        "ratio": 2.436,
+        "weekly_price": 0.0039,
+        "biweekly_price": 0.0095,
+        "iv_weekly": 59.9,
+        "iv_biweekly": 57.3,
+        "index": 60606.61
+      },
+      {
+        "date": "2024-08-17",
+        "ratio": 2.931,
+        "weekly_price": 0.0029,
+        "biweekly_price": 0.0085,
+        "iv_weekly": 59.3,
+        "iv_biweekly": 54.8,
+        "index": 58886.4
+      },
+      {
+        "date": "2024-08-24",
+        "ratio": 2.188,
+        "weekly_price": 0.0032,
+        "biweekly_price": 0.007,
+        "iv_weekly": 58.0,
+        "iv_biweekly": 54.4,
+        "index": 64034.53
+      },
+      {
+        "date": "2024-08-31",
+        "ratio": 3.269,
+        "weekly_price": 0.0026,
+        "biweekly_price": 0.0085,
+        "iv_weekly": 58.1,
+        "iv_biweekly": 51.2,
+        "index": 59095.73
+      },
+      {
+        "date": "2024-09-07",
+        "ratio": 2.54,
+        "weekly_price": 0.005,
+        "biweekly_price": 0.0127,
+        "iv_weekly": 73.0,
+        "iv_biweekly": 66.8,
+        "index": 53886.0
+      },
+      {
+        "date": "2024-09-14",
+        "ratio": 3.182,
+        "weekly_price": 0.0022,
+        "biweekly_price": 0.007,
+        "iv_weekly": 58.9,
+        "iv_biweekly": 55.2,
+        "index": 60546.08
+      },
+      {
+        "date": "2024-09-21",
+        "ratio": 3.158,
+        "weekly_price": 0.0019,
+        "biweekly_price": 0.006,
+        "iv_weekly": 52.5,
+        "iv_biweekly": 50.4,
+        "index": 63273.11
+      },
+      {
+        "date": "2024-09-28",
+        "ratio": 2.083,
+        "weekly_price": 0.0024,
+        "biweekly_price": 0.005,
+        "iv_weekly": 50.0,
+        "iv_biweekly": 49.3,
+        "index": 65787.93
+      },
+      {
+        "date": "2024-10-05",
+        "ratio": 2.955,
+        "weekly_price": 0.0022,
+        "biweekly_price": 0.0065,
+        "iv_weekly": 55.0,
+        "iv_biweekly": 51.3,
+        "index": 62125.44
+      },
+      {
+        "date": "2024-10-12",
+        "ratio": 5.0,
+        "weekly_price": 0.0011,
+        "biweekly_price": 0.0055,
+        "iv_weekly": 49.6,
+        "iv_biweekly": 49.9,
+        "index": 63235.97
+      },
+      {
+        "date": "2024-10-19",
+        "ratio": 2.846,
+        "weekly_price": 0.0013,
+        "biweekly_price": 0.0037,
+        "iv_weekly": 46.5,
+        "iv_biweekly": 46.3,
+        "index": 68409.64
+      },
+      {
+        "date": "2024-10-26",
+        "ratio": 7.5,
+        "weekly_price": 0.0016,
+        "biweekly_price": 0.012,
+        "iv_weekly": 52.5,
+        "iv_biweekly": 62.1,
+        "index": 66939.43
+      },
+      {
+        "date": "2024-11-02",
+        "ratio": 1.833,
+        "weekly_price": 0.006,
+        "biweekly_price": 0.011,
+        "iv_weekly": 75.9,
+        "iv_biweekly": 63.8,
+        "index": 69401.2
+      },
+      {
+        "date": "2024-11-09",
+        "ratio": 4.167,
+        "weekly_price": 0.0012,
+        "biweekly_price": 0.005,
+        "iv_weekly": 48.3,
+        "iv_biweekly": 48.2,
+        "index": 76653.31
+      },
+      {
+        "date": "2024-11-16",
+        "ratio": 3.036,
+        "weekly_price": 0.0028,
+        "biweekly_price": 0.0085,
+        "iv_weekly": 58.6,
+        "iv_biweekly": 58.1,
+        "index": 90962.87
+      },
+      {
+        "date": "2024-11-23",
+        "ratio": 2.297,
+        "weekly_price": 0.0037,
+        "biweekly_price": 0.0085,
+        "iv_weekly": 63.7,
+        "iv_biweekly": 59.0,
+        "index": 98884.85
+      },
+      {
+        "date": "2024-11-30",
+        "ratio": 2.708,
+        "weekly_price": 0.0024,
+        "biweekly_price": 0.0065,
+        "iv_weekly": 55.8,
+        "iv_biweekly": 51.6,
+        "index": 97580.55
+      },
+      {
+        "date": "2024-12-07",
+        "ratio": 2.222,
+        "weekly_price": 0.0036,
+        "biweekly_price": 0.008,
+        "iv_weekly": 61.8,
+        "iv_biweekly": 57.1,
+        "index": 100673.89
+      },
+      {
+        "date": "2024-12-14",
+        "ratio": 2.812,
+        "weekly_price": 0.0032,
+        "biweekly_price": 0.009,
+        "iv_weekly": 62.7,
+        "iv_biweekly": 55.6,
+        "index": 101664.04
+      },
+      {
+        "date": "2024-12-21",
+        "ratio": 3.182,
+        "weekly_price": 0.0033,
+        "biweekly_price": 0.0105,
+        "iv_weekly": 61.0,
+        "iv_biweekly": 56.8,
+        "index": 97698.26
+      },
+      {
+        "date": "2024-12-28",
+        "ratio": 3.0,
+        "weekly_price": 0.003,
+        "biweekly_price": 0.009,
+        "iv_weekly": 59.3,
+        "iv_biweekly": 57.4,
+        "index": 94416.87
+      },
+      {
+        "date": "2025-01-04",
+        "ratio": 4.167,
+        "weekly_price": 0.0018,
+        "biweekly_price": 0.0075,
+        "iv_weekly": 55.1,
+        "iv_biweekly": 54.9,
+        "index": 98371.89
+      },
+      {
+        "date": "2025-01-11",
+        "ratio": 3.077,
+        "weekly_price": 0.0026,
+        "biweekly_price": 0.008,
+        "iv_weekly": 58.1,
+        "iv_biweekly": 55.6,
+        "index": 94601.75
+      },
+      {
+        "date": "2025-01-18",
+        "ratio": 2.805,
+        "weekly_price": 0.0041,
+        "biweekly_price": 0.0115,
+        "iv_weekly": 66.0,
+        "iv_biweekly": 63.2,
+        "index": 104532.05
+      },
+      {
+        "date": "2025-01-25",
+        "ratio": 3.103,
+        "weekly_price": 0.0029,
+        "biweekly_price": 0.009,
+        "iv_weekly": 61.1,
+        "iv_biweekly": 56.2,
+        "index": 105064.14
+      },
+      {
+        "date": "2025-02-01",
+        "ratio": 2.917,
+        "weekly_price": 0.0024,
+        "biweekly_price": 0.007,
+        "iv_weekly": 54.7,
+        "iv_biweekly": 50.9,
+        "index": 101819.34
+      },
+      {
+        "date": "2025-02-08",
+        "ratio": 1.556,
+        "weekly_price": 0.0045,
+        "biweekly_price": 0.007,
+        "iv_weekly": 59.3,
+        "iv_biweekly": 54.9,
+        "index": 96395.0
+      },
+      {
+        "date": "2025-02-15",
+        "ratio": 5.5,
+        "weekly_price": 0.001,
+        "biweekly_price": 0.0055,
+        "iv_weekly": 49.2,
+        "iv_biweekly": 47.6,
+        "index": 97759.19
+      },
+      {
+        "date": "2025-02-22",
+        "ratio": 2.32,
+        "weekly_price": 0.0025,
+        "biweekly_price": 0.0058,
+        "iv_weekly": 56.3,
+        "iv_biweekly": 46.7,
+        "index": 95498.24
+      },
+      {
+        "date": "2025-03-01",
+        "ratio": 2.125,
+        "weekly_price": 0.004,
+        "biweekly_price": 0.0085,
+        "iv_weekly": 62.9,
+        "iv_biweekly": 59.1,
+        "index": 84232.52
+      },
+      {
+        "date": "2025-03-08",
+        "ratio": 2.375,
+        "weekly_price": 0.004,
+        "biweekly_price": 0.0095,
+        "iv_weekly": 63.8,
+        "iv_biweekly": 57.8,
+        "index": 86708.27
+      },
+      {
+        "date": "2025-03-15",
+        "ratio": 3.462,
+        "weekly_price": 0.0026,
+        "biweekly_price": 0.009,
+        "iv_weekly": 56.9,
+        "iv_biweekly": 56.0,
+        "index": 84416.94
+      },
+      {
+        "date": "2025-03-22",
+        "ratio": 3.333,
+        "weekly_price": 0.0018,
+        "biweekly_price": 0.006,
+        "iv_weekly": 50.7,
+        "iv_biweekly": 48.1,
+        "index": 84052.67
+      },
+      {
+        "date": "2025-03-29",
+        "ratio": 1.818,
+        "weekly_price": 0.0044,
+        "biweekly_price": 0.008,
+        "iv_weekly": 63.5,
+        "iv_biweekly": 57.0,
+        "index": 84110.35
+      },
+      {
+        "date": "2025-04-05",
+        "ratio": 2.3,
+        "weekly_price": 0.005,
+        "biweekly_price": 0.0115,
+        "iv_weekly": 65.3,
+        "iv_biweekly": 59.8,
+        "index": 83957.8
+      },
+      {
+        "date": "2025-04-12",
+        "ratio": 2.714,
+        "weekly_price": 0.0035,
+        "biweekly_price": 0.0095,
+        "iv_weekly": 64.8,
+        "iv_biweekly": 58.6,
+        "index": 83980.8
+      },
+      {
+        "date": "2025-04-19",
+        "ratio": 3.143,
+        "weekly_price": 0.0014,
+        "biweekly_price": 0.0044,
+        "iv_weekly": 49.6,
+        "iv_biweekly": 46.1,
+        "index": 84568.72
+      },
+      {
+        "date": "2025-04-26",
+        "ratio": 3.231,
+        "weekly_price": 0.0013,
+        "biweekly_price": 0.0042,
+        "iv_weekly": 50.4,
+        "iv_biweekly": 46.9,
+        "index": 94236.41
+      },
+      {
+        "date": "2025-05-03",
+        "ratio": 4.778,
+        "weekly_price": 0.0009,
+        "biweekly_price": 0.0043,
+        "iv_weekly": 46.9,
+        "iv_biweekly": 41.8,
+        "index": 97117.48
+      },
+      {
+        "date": "2025-05-10",
+        "ratio": 2.533,
+        "weekly_price": 0.0015,
+        "biweekly_price": 0.0038,
+        "iv_weekly": 49.6,
+        "iv_biweekly": 45.2,
+        "index": 103258.19
+      },
+      {
+        "date": "2025-05-17",
+        "ratio": 4.0,
+        "weekly_price": 0.0009,
+        "biweekly_price": 0.0036,
+        "iv_weekly": 43.2,
+        "iv_biweekly": 40.9,
+        "index": 103679.13
+      },
+      {
+        "date": "2025-05-24",
+        "ratio": 2.706,
+        "weekly_price": 0.0017,
+        "biweekly_price": 0.0046,
+        "iv_weekly": 54.3,
+        "iv_biweekly": 46.4,
+        "index": 107249.14
+      },
+      {
+        "date": "2025-05-31",
+        "ratio": 3.529,
+        "weekly_price": 0.0017,
+        "biweekly_price": 0.006,
+        "iv_weekly": 49.1,
+        "iv_biweekly": 44.5,
+        "index": 103724.23
+      },
+      {
+        "date": "2025-06-07",
+        "ratio": 3.111,
+        "weekly_price": 0.0009,
+        "biweekly_price": 0.0028,
+        "iv_weekly": 41.6,
+        "iv_biweekly": 41.1,
+        "index": 104507.05
+      },
+      {
+        "date": "2025-06-14",
+        "ratio": 2.267,
+        "weekly_price": 0.0015,
+        "biweekly_price": 0.0034,
+        "iv_weekly": 51.2,
+        "iv_biweekly": 44.2,
+        "index": 105067.43
+      },
+      {
+        "date": "2025-06-21",
+        "ratio": 4.2,
+        "weekly_price": 0.001,
+        "biweekly_price": 0.0042,
+        "iv_weekly": 50.3,
+        "iv_biweekly": 41.0,
+        "index": 103408.58
+      },
+      {
+        "date": "2025-06-28",
+        "ratio": 4.0,
+        "weekly_price": 0.0007,
+        "biweekly_price": 0.0028,
+        "iv_weekly": 41.4,
+        "iv_biweekly": 39.6,
+        "index": 107088.59
+      },
+      {
+        "date": "2025-07-05",
+        "ratio": 5.0,
+        "weekly_price": 0.0009,
+        "biweekly_price": 0.0045,
+        "iv_weekly": 47.6,
+        "iv_biweekly": 43.7,
+        "index": 108098.15
+      },
+      {
+        "date": "2025-07-12",
+        "ratio": 2.545,
+        "weekly_price": 0.0011,
+        "biweekly_price": 0.0028,
+        "iv_weekly": 46.3,
+        "iv_biweekly": 40.1,
+        "index": 117419.98
+      },
+      {
+        "date": "2025-07-19",
+        "ratio": 1.643,
+        "weekly_price": 0.0014,
+        "biweekly_price": 0.0023,
+        "iv_weekly": 47.6,
+        "iv_biweekly": 40.7,
+        "index": 118071.12
+      },
+      {
+        "date": "2025-07-26",
+        "ratio": 3.062,
+        "weekly_price": 0.0016,
+        "biweekly_price": 0.0049,
+        "iv_weekly": 49.9,
+        "iv_biweekly": 47.8,
+        "index": 117209.23
+      },
+      {
+        "date": "2025-08-02",
+        "ratio": 2.133,
+        "weekly_price": 0.0015,
+        "biweekly_price": 0.0032,
+        "iv_weekly": 58.0,
+        "iv_biweekly": 47.4,
+        "index": 113368.83
+      },
+      {
+        "date": "2025-08-09",
+        "ratio": 4.0,
+        "weekly_price": 0.0005,
+        "biweekly_price": 0.002,
+        "iv_weekly": 44.7,
+        "iv_biweekly": 38.1,
+        "index": 116854.04
+      },
+      {
+        "date": "2025-08-16",
+        "ratio": 3.083,
+        "weekly_price": 0.0012,
+        "biweekly_price": 0.0037,
+        "iv_weekly": 47.5,
+        "iv_biweekly": 42.7,
+        "index": 117497.7
+      },
+      {
+        "date": "2025-08-23",
+        "ratio": 3.667,
+        "weekly_price": 0.0006,
+        "biweekly_price": 0.0022,
+        "iv_weekly": 43.0,
+        "iv_biweekly": 39.3,
+        "index": 116733.79
+      },
+      {
+        "date": "2025-08-30",
+        "ratio": 2.222,
+        "weekly_price": 0.0027,
+        "biweekly_price": 0.006,
+        "iv_weekly": 47.0,
+        "iv_biweekly": 42.2,
+        "index": 108392.03
+      },
+      {
+        "date": "2025-09-06",
+        "ratio": 3.2,
+        "weekly_price": 0.001,
+        "biweekly_price": 0.0032,
+        "iv_weekly": 48.2,
+        "iv_biweekly": 42.9,
+        "index": 110777.42
+      },
+      {
+        "date": "2025-09-13",
+        "ratio": 3.833,
+        "weekly_price": 0.0006,
+        "biweekly_price": 0.0023,
+        "iv_weekly": 44.1,
+        "iv_biweekly": 40.1,
+        "index": 116056.25
+      },
+      {
+        "date": "2025-09-20",
+        "ratio": 2.733,
+        "weekly_price": 0.0015,
+        "biweekly_price": 0.0041,
+        "iv_weekly": 50.8,
+        "iv_biweekly": 40.8,
+        "index": 115572.34
+      },
+      {
+        "date": "2025-09-27",
+        "ratio": 2.5,
+        "weekly_price": 0.0012,
+        "biweekly_price": 0.003,
+        "iv_weekly": 42.4,
+        "iv_biweekly": 43.0,
+        "index": 109432.31
+      },
+      {
+        "date": "2025-10-04",
+        "ratio": 2.909,
+        "weekly_price": 0.0011,
+        "biweekly_price": 0.0032,
+        "iv_weekly": 48.4,
+        "iv_biweekly": 42.6,
+        "index": 122404.77
+      },
+      {
+        "date": "2025-10-11",
+        "ratio": 2.0,
+        "weekly_price": 0.003,
+        "biweekly_price": 0.006,
+        "iv_weekly": 58.3,
+        "iv_biweekly": 49.8,
+        "index": 112975.99
+      },
+      {
+        "date": "2025-10-18",
+        "ratio": 2.704,
+        "weekly_price": 0.0027,
+        "biweekly_price": 0.0073,
+        "iv_weekly": 62.9,
+        "iv_biweekly": 57.4,
+        "index": 106924.37
+      },
+      {
+        "date": "2025-10-25",
+        "ratio": 3.769,
+        "weekly_price": 0.0013,
+        "biweekly_price": 0.0049,
+        "iv_weekly": 48.8,
+        "iv_biweekly": 46.7,
+        "index": 111076.58
+      },
+      {
+        "date": "2025-11-01",
+        "ratio": 4.231,
+        "weekly_price": 0.0013,
+        "biweekly_price": 0.0055,
+        "iv_weekly": 51.1,
+        "iv_biweekly": 44.2,
+        "index": 109498.07
+      },
+      {
+        "date": "2025-11-08",
+        "ratio": 4.167,
+        "weekly_price": 0.0012,
+        "biweekly_price": 0.005,
+        "iv_weekly": 52.5,
+        "iv_biweekly": 46.9,
+        "index": 103590.08
+      },
+      {
+        "date": "2025-11-15",
+        "ratio": 2.286,
+        "weekly_price": 0.0035,
+        "biweekly_price": 0.008,
+        "iv_weekly": 60.5,
+        "iv_biweekly": 56.2,
+        "index": 95445.08
+      },
+      {
+        "date": "2025-11-22",
+        "ratio": 2.5,
+        "weekly_price": 0.0048,
+        "biweekly_price": 0.012,
+        "iv_weekly": 75.9,
+        "iv_biweekly": 67.4,
+        "index": 84911.86
+      },
+      {
+        "date": "2025-11-29",
+        "ratio": 3.75,
+        "weekly_price": 0.002,
+        "biweekly_price": 0.0075,
+        "iv_weekly": 53.8,
+        "iv_biweekly": 53.9,
+        "index": 91123.53
+      },
+      {
+        "date": "2025-12-06",
+        "ratio": 3.036,
+        "weekly_price": 0.0028,
+        "biweekly_price": 0.0085,
+        "iv_weekly": 59.3,
+        "iv_biweekly": 56.8,
+        "index": 89163.33
+      },
+      {
+        "date": "2025-12-13",
+        "ratio": 2.593,
+        "weekly_price": 0.0027,
+        "biweekly_price": 0.007,
+        "iv_weekly": 52.9,
+        "iv_biweekly": 49.4,
+        "index": 90181.88
+      },
+      {
+        "date": "2025-12-20",
+        "ratio": 4.286,
+        "weekly_price": 0.0021,
+        "biweekly_price": 0.009,
+        "iv_weekly": 50.7,
+        "iv_biweekly": 49.5,
+        "index": 88068.5
+      },
+      {
+        "date": "2025-12-27",
+        "ratio": 3.467,
+        "weekly_price": 0.0015,
+        "biweekly_price": 0.0052,
+        "iv_weekly": 44.0,
+        "iv_biweekly": 42.8,
+        "index": 87374.44
+      },
+      {
+        "date": "2026-01-03",
+        "ratio": 2.895,
+        "weekly_price": 0.0019,
+        "biweekly_price": 0.0055,
+        "iv_weekly": 47.9,
+        "iv_biweekly": 45.0,
+        "index": 89929.67
+      },
+      {
+        "date": "2026-01-10",
+        "ratio": 2.5,
+        "weekly_price": 0.0018,
+        "biweekly_price": 0.0045,
+        "iv_weekly": 48.2,
+        "iv_biweekly": 43.9,
+        "index": 90181.38
+      },
+      {
+        "date": "2026-01-17",
+        "ratio": 5.0,
+        "weekly_price": 0.0007,
+        "biweekly_price": 0.0035,
+        "iv_weekly": 44.3,
+        "iv_biweekly": 42.1,
+        "index": 95264.94
+      },
+      {
+        "date": "2026-01-24",
+        "ratio": 2.071,
+        "weekly_price": 0.0014,
+        "biweekly_price": 0.0029,
+        "iv_weekly": 52.0,
+        "iv_biweekly": 44.1,
+        "index": 89427.35
+      },
+      {
+        "date": "2026-01-31",
+        "ratio": 2.647,
+        "weekly_price": 0.0017,
+        "biweekly_price": 0.0045,
+        "iv_weekly": 54.3,
+        "iv_biweekly": 48.9,
+        "index": 83836.46
+      },
+      {
+        "date": "2026-02-07",
+        "ratio": 2.2,
+        "weekly_price": 0.0075,
+        "biweekly_price": 0.0165,
+        "iv_weekly": 79.0,
+        "iv_biweekly": 72.6,
+        "index": 71438.0
+      },
+      {
+        "date": "2026-02-14",
+        "ratio": 4.167,
+        "weekly_price": 0.0024,
+        "biweekly_price": 0.01,
+        "iv_weekly": 57.9,
+        "iv_biweekly": 58.5,
+        "index": 69809.76
+      },
+      {
+        "date": "2026-02-21",
+        "ratio": 2.368,
+        "weekly_price": 0.0038,
+        "biweekly_price": 0.009,
+        "iv_weekly": 63.9,
+        "iv_biweekly": 56.6,
+        "index": 68511.71
+      }
+    ],
+    "ETH": [
+      {
+        "date": "2023-01-07",
+        "ratio": 5.0,
+        "weekly_price": 0.001,
+        "biweekly_price": 0.005,
+        "iv_weekly": 59.3,
+        "iv_biweekly": 57.6,
+        "index": 1268.69
+      },
+      {
+        "date": "2023-01-14",
+        "ratio": 3.167,
+        "weekly_price": 0.003,
+        "biweekly_price": 0.0095,
+        "iv_weekly": 75.9,
+        "iv_biweekly": 73.1,
+        "index": 1447.74
+      },
+      {
+        "date": "2023-01-21",
+        "ratio": 4.0,
+        "weekly_price": 0.0015,
+        "biweekly_price": 0.006,
+        "iv_weekly": 74.6,
+        "iv_biweekly": 66.1,
+        "index": 1660.89
+      },
+      {
+        "date": "2023-01-28",
+        "ratio": 2.5,
+        "weekly_price": 0.002,
+        "biweekly_price": 0.005,
+        "iv_weekly": 77.3,
+        "iv_biweekly": 66.7,
+        "index": 1597.78
+      },
+      {
+        "date": "2023-02-04",
+        "ratio": 3.25,
+        "weekly_price": 0.002,
+        "biweekly_price": 0.0065,
+        "iv_weekly": 77.3,
+        "iv_biweekly": 74.0,
+        "index": 1655.47
+      },
+      {
+        "date": "2023-02-11",
+        "ratio": 2.571,
+        "weekly_price": 0.0035,
+        "biweekly_price": 0.009,
+        "iv_weekly": 79.3,
+        "iv_biweekly": 73.5,
+        "index": 1506.88
+      },
+      {
+        "date": "2023-02-18",
+        "ratio": 2.375,
+        "weekly_price": 0.004,
+        "biweekly_price": 0.0095,
+        "iv_weekly": 85.2,
+        "iv_biweekly": 75.6,
+        "index": 1693.21
+      },
+      {
+        "date": "2023-02-25",
+        "ratio": 4.0,
+        "weekly_price": 0.001,
+        "biweekly_price": 0.004,
+        "iv_weekly": 70.0,
+        "iv_biweekly": 64.0,
+        "index": 1606.32
+      },
+      {
+        "date": "2023-03-04",
+        "ratio": 2.0,
+        "weekly_price": 0.002,
+        "biweekly_price": 0.004,
+        "iv_weekly": 68.2,
+        "iv_biweekly": 66.9,
+        "index": 1558.89
+      },
+      {
+        "date": "2023-03-11",
+        "ratio": 2.1,
+        "weekly_price": 0.005,
+        "biweekly_price": 0.0105,
+        "iv_weekly": 98.2,
+        "iv_biweekly": 80.2,
+        "index": 1429.6
+      },
+      {
+        "date": "2023-03-18",
+        "ratio": 1.3,
+        "weekly_price": 0.005,
+        "biweekly_price": 0.0065,
+        "iv_weekly": 87.0,
+        "iv_biweekly": 75.5,
+        "index": 1795.81
+      },
+      {
+        "date": "2023-03-25",
+        "ratio": 2.25,
+        "weekly_price": 0.004,
+        "biweekly_price": 0.009,
+        "iv_weekly": 84.3,
+        "iv_biweekly": 70.0,
+        "index": 1748.12
+      },
+      {
+        "date": "2023-04-01",
+        "ratio": 1.714,
+        "weekly_price": 0.0035,
+        "biweekly_price": 0.006,
+        "iv_weekly": 86.6,
+        "iv_biweekly": 69.8,
+        "index": 1825.67
+      },
+      {
+        "date": "2023-04-08",
+        "ratio": 2.0,
+        "weekly_price": 0.0025,
+        "biweekly_price": 0.005,
+        "iv_weekly": 76.2,
+        "iv_biweekly": 63.9,
+        "index": 1866.29
+      },
+      {
+        "date": "2023-04-15",
+        "ratio": 2.5,
+        "weekly_price": 0.002,
+        "biweekly_price": 0.005,
+        "iv_weekly": 74.2,
+        "iv_biweekly": 62.1,
+        "index": 2110.24
+      },
+      {
+        "date": "2023-04-22",
+        "ratio": 2.0,
+        "weekly_price": 0.0025,
+        "biweekly_price": 0.005,
+        "iv_weekly": 69.4,
+        "iv_biweekly": 68.5,
+        "index": 1837.63
+      },
+      {
+        "date": "2023-04-29",
+        "ratio": 7.0,
+        "weekly_price": 0.0005,
+        "biweekly_price": 0.0035,
+        "iv_weekly": 59.4,
+        "iv_biweekly": 61.4,
+        "index": 1887.47
+      },
+      {
+        "date": "2023-05-06",
+        "ratio": 2.333,
+        "weekly_price": 0.0015,
+        "biweekly_price": 0.0035,
+        "iv_weekly": 68.9,
+        "iv_biweekly": 57.8,
+        "index": 1989.93
+      },
+      {
+        "date": "2023-05-13",
+        "ratio": 1.75,
+        "weekly_price": 0.002,
+        "biweekly_price": 0.0035,
+        "iv_weekly": 71.2,
+        "iv_biweekly": 65.1,
+        "index": 1749.04
+      },
+      {
+        "date": "2023-05-20",
+        "ratio": 2.5,
+        "weekly_price": 0.001,
+        "biweekly_price": 0.0025,
+        "iv_weekly": 78.3,
+        "iv_biweekly": 54.8,
+        "index": 1812.86
+      },
+      {
+        "date": "2023-05-27",
+        "ratio": 7.0,
+        "weekly_price": 0.0005,
+        "biweekly_price": 0.0035,
+        "iv_weekly": 62.2,
+        "iv_biweekly": 51.6,
+        "index": 1828.25
+      },
+      {
+        "date": "2023-06-03",
+        "ratio": 3.0,
+        "weekly_price": 0.0005,
+        "biweekly_price": 0.0015,
+        "iv_weekly": 63.2,
+        "iv_biweekly": 53.4,
+        "index": 1903.44
+      },
+      {
+        "date": "2023-06-10",
+        "ratio": 2.0,
+        "weekly_price": 0.001,
+        "biweekly_price": 0.002,
+        "iv_weekly": 76.7,
+        "iv_biweekly": 54.3,
+        "index": 1741.24
+      },
+      {
+        "date": "2023-06-17",
+        "ratio": 5.5,
+        "weekly_price": 0.001,
+        "biweekly_price": 0.0055,
+        "iv_weekly": 69.1,
+        "iv_biweekly": 57.9,
+        "index": 1718.97
+      },
+      {
+        "date": "2023-06-24",
+        "ratio": 3.0,
+        "weekly_price": 0.001,
+        "biweekly_price": 0.003,
+        "iv_weekly": 69.4,
+        "iv_biweekly": 60.0,
+        "index": 1890.19
+      },
+      {
+        "date": "2023-07-01",
+        "ratio": 2.5,
+        "weekly_price": 0.001,
+        "biweekly_price": 0.0025,
+        "iv_weekly": 65.2,
+        "iv_biweekly": 54.5,
+        "index": 1933.46
+      },
+      {
+        "date": "2023-07-08",
+        "ratio": 2.125,
+        "weekly_price": 0.0008,
+        "biweekly_price": 0.0017,
+        "iv_weekly": 60.8,
+        "iv_biweekly": 56.8,
+        "index": 1868.16
+      },
+      {
+        "date": "2023-07-15",
+        "ratio": 5.5,
+        "weekly_price": 0.0006,
+        "biweekly_price": 0.0033,
+        "iv_weekly": 65.9,
+        "iv_biweekly": 54.1,
+        "index": 1911.82
+      },
+      {
+        "date": "2023-07-22",
+        "ratio": 3.2,
+        "weekly_price": 0.0005,
+        "biweekly_price": 0.0016,
+        "iv_weekly": 61.5,
+        "iv_biweekly": 51.1,
+        "index": 1892.63
+      },
+      {
+        "date": "2023-07-29",
+        "ratio": 8.333,
+        "weekly_price": 0.0003,
+        "biweekly_price": 0.0025,
+        "iv_weekly": 54.0,
+        "iv_biweekly": 37.1,
+        "index": 1876.63
+      },
+      {
+        "date": "2023-08-05",
+        "ratio": 3.667,
+        "weekly_price": 0.0003,
+        "biweekly_price": 0.0011,
+        "iv_weekly": 49.0,
+        "iv_biweekly": 45.9,
+        "index": 1846.03
+      },
+      {
+        "date": "2023-08-12",
+        "ratio": 8.5,
+        "weekly_price": 0.0002,
+        "biweekly_price": 0.0017,
+        "iv_weekly": 58.3,
+        "iv_biweekly": 36.8,
+        "index": 1849.09
+      },
+      {
+        "date": "2023-08-19",
+        "ratio": 1.684,
+        "weekly_price": 0.0019,
+        "biweekly_price": 0.0032,
+        "iv_weekly": 78.4,
+        "iv_biweekly": 60.6,
+        "index": 1660.93
+      },
+      {
+        "date": "2023-08-26",
+        "ratio": 4.0,
+        "weekly_price": 0.0006,
+        "biweekly_price": 0.0024,
+        "iv_weekly": 62.5,
+        "iv_biweekly": 55.5,
+        "index": 1653.12
+      },
+      {
+        "date": "2023-09-02",
+        "ratio": 5.5,
+        "weekly_price": 0.0004,
+        "biweekly_price": 0.0022,
+        "iv_weekly": 58.1,
+        "iv_biweekly": 51.6,
+        "index": 1635.8
+      },
+      {
+        "date": "2023-09-09",
+        "ratio": 5.667,
+        "weekly_price": 0.0003,
+        "biweekly_price": 0.0017,
+        "iv_weekly": 54.5,
+        "iv_biweekly": 49.9,
+        "index": 1634.06
+      },
+      {
+        "date": "2023-09-16",
+        "ratio": 3.167,
+        "weekly_price": 0.0006,
+        "biweekly_price": 0.0019,
+        "iv_weekly": 60.0,
+        "iv_biweekly": 51.0,
+        "index": 1643.0
+      },
+      {
+        "date": "2023-09-23",
+        "ratio": 1.778,
+        "weekly_price": 0.0009,
+        "biweekly_price": 0.0016,
+        "iv_weekly": 53.8,
+        "iv_biweekly": 49.5,
+        "index": 1594.32
+      },
+      {
+        "date": "2023-09-30",
+        "ratio": 3.25,
+        "weekly_price": 0.0004,
+        "biweekly_price": 0.0013,
+        "iv_weekly": 60.4,
+        "iv_biweekly": 50.9,
+        "index": 1666.54
+      },
+      {
+        "date": "2023-10-07",
+        "ratio": 2.8,
+        "weekly_price": 0.0005,
+        "biweekly_price": 0.0014,
+        "iv_weekly": 60.3,
+        "iv_biweekly": 48.4,
+        "index": 1656.64
+      },
+      {
+        "date": "2023-10-14",
+        "ratio": 2.111,
+        "weekly_price": 0.0009,
+        "biweekly_price": 0.0019,
+        "iv_weekly": 69.0,
+        "iv_biweekly": 55.6,
+        "index": 1547.72
+      },
+      {
+        "date": "2023-10-21",
+        "ratio": 2.6,
+        "weekly_price": 0.0005,
+        "biweekly_price": 0.0013,
+        "iv_weekly": 51.1,
+        "iv_biweekly": 49.7,
+        "index": 1604.64
+      },
+      {
+        "date": "2023-10-28",
+        "ratio": 3.333,
+        "weekly_price": 0.0006,
+        "biweekly_price": 0.002,
+        "iv_weekly": 59.6,
+        "iv_biweekly": 51.7,
+        "index": 1760.87
+      },
+      {
+        "date": "2023-11-04",
+        "ratio": 3.0,
+        "weekly_price": 0.0011,
+        "biweekly_price": 0.0033,
+        "iv_weekly": 57.4,
+        "iv_biweekly": 50.9,
+        "index": 1829.35
+      },
+      {
+        "date": "2023-11-11",
+        "ratio": 5.667,
+        "weekly_price": 0.0006,
+        "biweekly_price": 0.0034,
+        "iv_weekly": 64.8,
+        "iv_biweekly": 63.5,
+        "index": 2079.61
+      },
+      {
+        "date": "2023-11-18",
+        "ratio": 1.529,
+        "weekly_price": 0.0017,
+        "biweekly_price": 0.0026,
+        "iv_weekly": 72.3,
+        "iv_biweekly": 56.8,
+        "index": 1940.05
+      },
+      {
+        "date": "2023-11-25",
+        "ratio": 2.8,
+        "weekly_price": 0.001,
+        "biweekly_price": 0.0028,
+        "iv_weekly": 63.6,
+        "iv_biweekly": 60.8,
+        "index": 2101.41
+      },
+      {
+        "date": "2023-12-02",
+        "ratio": 3.0,
+        "weekly_price": 0.0006,
+        "biweekly_price": 0.0018,
+        "iv_weekly": 57.0,
+        "iv_biweekly": 55.5,
+        "index": 2088.61
+      },
+      {
+        "date": "2023-12-09",
+        "ratio": 3.222,
+        "weekly_price": 0.0009,
+        "biweekly_price": 0.0029,
+        "iv_weekly": 67.3,
+        "iv_biweekly": 60.1,
+        "index": 2359.23
+      },
+      {
+        "date": "2023-12-16",
+        "ratio": 3.333,
+        "weekly_price": 0.0009,
+        "biweekly_price": 0.003,
+        "iv_weekly": 64.1,
+        "iv_biweekly": 58.5,
+        "index": 2221.36
+      },
+      {
+        "date": "2023-12-23",
+        "ratio": 1.786,
+        "weekly_price": 0.0014,
+        "biweekly_price": 0.0025,
+        "iv_weekly": 67.5,
+        "iv_biweekly": 59.5,
+        "index": 2332.46
+      },
+      {
+        "date": "2023-12-30",
+        "ratio": 3.333,
+        "weekly_price": 0.0018,
+        "biweekly_price": 0.006,
+        "iv_weekly": 74.0,
+        "iv_biweekly": 70.5,
+        "index": 2282.94
+      },
+      {
+        "date": "2024-01-06",
+        "ratio": 2.368,
+        "weekly_price": 0.0038,
+        "biweekly_price": 0.009,
+        "iv_weekly": 90.6,
+        "iv_biweekly": 79.3,
+        "index": 2248.3
+      },
+      {
+        "date": "2024-01-13",
+        "ratio": 1.538,
+        "weekly_price": 0.0039,
+        "biweekly_price": 0.006,
+        "iv_weekly": 80.0,
+        "iv_biweekly": 75.8,
+        "index": 2477.39
+      },
+      {
+        "date": "2024-01-20",
+        "ratio": 2.333,
+        "weekly_price": 0.0012,
+        "biweekly_price": 0.0028,
+        "iv_weekly": 73.1,
+        "iv_biweekly": 59.6,
+        "index": 2467.61
+      },
+      {
+        "date": "2024-01-27",
+        "ratio": 1.667,
+        "weekly_price": 0.0009,
+        "biweekly_price": 0.0015,
+        "iv_weekly": 52.7,
+        "iv_biweekly": 53.0,
+        "index": 2265.9
+      },
+      {
+        "date": "2024-02-03",
+        "ratio": 4.5,
+        "weekly_price": 0.0002,
+        "biweekly_price": 0.0009,
+        "iv_weekly": 48.6,
+        "iv_biweekly": 51.5,
+        "index": 2304.33
+      },
+      {
+        "date": "2024-02-10",
+        "ratio": 5.6,
+        "weekly_price": 0.0005,
+        "biweekly_price": 0.0028,
+        "iv_weekly": 62.2,
+        "iv_biweekly": 53.1,
+        "index": 2489.59
+      },
+      {
+        "date": "2024-02-17",
+        "ratio": 2.643,
+        "weekly_price": 0.0014,
+        "biweekly_price": 0.0037,
+        "iv_weekly": 74.1,
+        "iv_biweekly": 61.6,
+        "index": 2789.1
+      },
+      {
+        "date": "2024-02-24",
+        "ratio": 3.462,
+        "weekly_price": 0.0013,
+        "biweekly_price": 0.0045,
+        "iv_weekly": 69.7,
+        "iv_biweekly": 63.2,
+        "index": 2937.63
+      },
+      {
+        "date": "2024-03-02",
+        "ratio": 3.75,
+        "weekly_price": 0.0016,
+        "biweekly_price": 0.006,
+        "iv_weekly": 75.8,
+        "iv_biweekly": 71.6,
+        "index": 3432.77
+      },
+      {
+        "date": "2024-03-09",
+        "ratio": 2.586,
+        "weekly_price": 0.0029,
+        "biweekly_price": 0.0075,
+        "iv_weekly": 85.8,
+        "iv_biweekly": 75.7,
+        "index": 3902.5
+      },
+      {
+        "date": "2024-03-16",
+        "ratio": 2.182,
+        "weekly_price": 0.0055,
+        "biweekly_price": 0.012,
+        "iv_weekly": 96.0,
+        "iv_biweekly": 85.5,
+        "index": 3637.15
+      },
+      {
+        "date": "2024-03-23",
+        "ratio": 1.833,
+        "weekly_price": 0.006,
+        "biweekly_price": 0.011,
+        "iv_weekly": 97.7,
+        "iv_biweekly": 85.3,
+        "index": 3286.41
+      },
+      {
+        "date": "2024-03-30",
+        "ratio": 4.762,
+        "weekly_price": 0.0021,
+        "biweekly_price": 0.01,
+        "iv_weekly": 87.0,
+        "iv_biweekly": 80.5,
+        "index": 3494.32
+      },
+      {
+        "date": "2024-04-06",
+        "ratio": 2.885,
+        "weekly_price": 0.0026,
+        "biweekly_price": 0.0075,
+        "iv_weekly": 83.5,
+        "iv_biweekly": 77.2,
+        "index": 3313.61
+      },
+      {
+        "date": "2024-04-13",
+        "ratio": 1.7,
+        "weekly_price": 0.005,
+        "biweekly_price": 0.0085,
+        "iv_weekly": 86.3,
+        "iv_biweekly": 80.7,
+        "index": 3237.19
+      },
+      {
+        "date": "2024-04-20",
+        "ratio": 2.545,
+        "weekly_price": 0.0055,
+        "biweekly_price": 0.014,
+        "iv_weekly": 98.3,
+        "iv_biweekly": 85.5,
+        "index": 3075.95
+      },
+      {
+        "date": "2024-04-27",
+        "ratio": 2.727,
+        "weekly_price": 0.0033,
+        "biweekly_price": 0.009,
+        "iv_weekly": 79.6,
+        "iv_biweekly": 72.0,
+        "index": 3146.97
+      },
+      {
+        "date": "2024-05-04",
+        "ratio": 2.5,
+        "weekly_price": 0.0028,
+        "biweekly_price": 0.007,
+        "iv_weekly": 88.2,
+        "iv_biweekly": 76.3,
+        "index": 3111.59
+      },
+      {
+        "date": "2024-05-11",
+        "ratio": 2.708,
+        "weekly_price": 0.0024,
+        "biweekly_price": 0.0065,
+        "iv_weekly": 88.0,
+        "iv_biweekly": 77.1,
+        "index": 2894.51
+      },
+      {
+        "date": "2024-05-18",
+        "ratio": 2.778,
+        "weekly_price": 0.0018,
+        "biweekly_price": 0.005,
+        "iv_weekly": 77.4,
+        "iv_biweekly": 68.4,
+        "index": 3093.54
+      },
+      {
+        "date": "2024-05-25",
+        "ratio": 4.273,
+        "weekly_price": 0.0011,
+        "biweekly_price": 0.0047,
+        "iv_weekly": 71.7,
+        "iv_biweekly": 68.8,
+        "index": 3771.61
+      },
+      {
+        "date": "2024-06-01",
+        "ratio": 4.167,
+        "weekly_price": 0.0012,
+        "biweekly_price": 0.005,
+        "iv_weekly": 70.4,
+        "iv_biweekly": 65.6,
+        "index": 3734.42
+      },
+      {
+        "date": "2024-06-08",
+        "ratio": 3.0,
+        "weekly_price": 0.0014,
+        "biweekly_price": 0.0042,
+        "iv_weekly": 59.8,
+        "iv_biweekly": 58.0,
+        "index": 3655.17
+      },
+      {
+        "date": "2024-06-15",
+        "ratio": 2.118,
+        "weekly_price": 0.0017,
+        "biweekly_price": 0.0036,
+        "iv_weekly": 68.0,
+        "iv_biweekly": 61.0,
+        "index": 3474.07
+      },
+      {
+        "date": "2024-06-22",
+        "ratio": 4.444,
+        "weekly_price": 0.0009,
+        "biweekly_price": 0.004,
+        "iv_weekly": 66.2,
+        "iv_biweekly": 61.5,
+        "index": 3500.5
+      },
+      {
+        "date": "2024-06-29",
+        "ratio": 3.0,
+        "weekly_price": 0.0006,
+        "biweekly_price": 0.0018,
+        "iv_weekly": 69.0,
+        "iv_biweekly": 58.1,
+        "index": 3378.82
+      },
+      {
+        "date": "2024-07-06",
+        "ratio": 2.424,
+        "weekly_price": 0.0033,
+        "biweekly_price": 0.008,
+        "iv_weekly": 72.8,
+        "iv_biweekly": 66.6,
+        "index": 2972.97
+      },
+      {
+        "date": "2024-07-13",
+        "ratio": 1.75,
+        "weekly_price": 0.002,
+        "biweekly_price": 0.0035,
+        "iv_weekly": 65.7,
+        "iv_biweekly": 66.0,
+        "index": 3096.26
+      },
+      {
+        "date": "2024-07-20",
+        "ratio": 4.0,
+        "weekly_price": 0.0015,
+        "biweekly_price": 0.006,
+        "iv_weekly": 70.8,
+        "iv_biweekly": 67.7,
+        "index": 3515.08
+      },
+      {
+        "date": "2024-07-27",
+        "ratio": 1.375,
+        "weekly_price": 0.004,
+        "biweekly_price": 0.0055,
+        "iv_weekly": 68.1,
+        "iv_biweekly": 65.9,
+        "index": 3254.1
+      },
+      {
+        "date": "2024-08-03",
+        "ratio": 2.0,
+        "weekly_price": 0.003,
+        "biweekly_price": 0.006,
+        "iv_weekly": 71.9,
+        "iv_biweekly": 61.0,
+        "index": 2975.52
+      },
+      {
+        "date": "2024-08-10",
+        "ratio": 3.548,
+        "weekly_price": 0.0031,
+        "biweekly_price": 0.011,
+        "iv_weekly": 84.0,
+        "iv_biweekly": 77.2,
+        "index": 2593.73
+      },
+      {
+        "date": "2024-08-17",
+        "ratio": 5.385,
+        "weekly_price": 0.0013,
+        "biweekly_price": 0.007,
+        "iv_weekly": 73.8,
+        "iv_biweekly": 72.5,
+        "index": 2601.13
+      },
+      {
+        "date": "2024-08-24",
+        "ratio": 3.25,
+        "weekly_price": 0.002,
+        "biweekly_price": 0.0065,
+        "iv_weekly": 68.6,
+        "iv_biweekly": 65.0,
+        "index": 2770.78
+      },
+      {
+        "date": "2024-08-31",
+        "ratio": 2.571,
+        "weekly_price": 0.0035,
+        "biweekly_price": 0.009,
+        "iv_weekly": 73.7,
+        "iv_biweekly": 66.8,
+        "index": 2516.39
+      },
+      {
+        "date": "2024-09-07",
+        "ratio": 0.778,
+        "weekly_price": 0.009,
+        "biweekly_price": 0.007,
+        "iv_weekly": 81.6,
+        "iv_biweekly": 86.6,
+        "index": 2218.71
+      },
+      {
+        "date": "2024-09-14",
+        "ratio": 3.684,
+        "weekly_price": 0.0019,
+        "biweekly_price": 0.007,
+        "iv_weekly": 72.1,
+        "iv_biweekly": 66.8,
+        "index": 2452.74
+      },
+      {
+        "date": "2024-09-21",
+        "ratio": 2.273,
+        "weekly_price": 0.0022,
+        "biweekly_price": 0.005,
+        "iv_weekly": 71.8,
+        "iv_biweekly": 67.2,
+        "index": 2551.18
+      },
+      {
+        "date": "2024-09-28",
+        "ratio": 3.545,
+        "weekly_price": 0.0011,
+        "biweekly_price": 0.0039,
+        "iv_weekly": 66.4,
+        "iv_biweekly": 60.5,
+        "index": 2696.37
+      },
+      {
+        "date": "2024-10-05",
+        "ratio": 3.158,
+        "weekly_price": 0.0019,
+        "biweekly_price": 0.006,
+        "iv_weekly": 67.8,
+        "iv_biweekly": 63.0,
+        "index": 2423.29
+      },
+      {
+        "date": "2024-10-12",
+        "ratio": 2.611,
+        "weekly_price": 0.0018,
+        "biweekly_price": 0.0047,
+        "iv_weekly": 69.8,
+        "iv_biweekly": 61.0,
+        "index": 2448.11
+      },
+      {
+        "date": "2024-10-19",
+        "ratio": 5.8,
+        "weekly_price": 0.0005,
+        "biweekly_price": 0.0029,
+        "iv_weekly": 65.9,
+        "iv_biweekly": 56.5,
+        "index": 2641.18
+      },
+      {
+        "date": "2024-10-26",
+        "ratio": 1.724,
+        "weekly_price": 0.0029,
+        "biweekly_price": 0.005,
+        "iv_weekly": 73.2,
+        "iv_biweekly": 77.7,
+        "index": 2398.77
+      },
+      {
+        "date": "2024-11-02",
+        "ratio": 1.5,
+        "weekly_price": 0.005,
+        "biweekly_price": 0.0075,
+        "iv_weekly": 80.5,
+        "iv_biweekly": 76.6,
+        "index": 2509.52
+      },
+      {
+        "date": "2024-11-09",
+        "ratio": 2.4,
+        "weekly_price": 0.0015,
+        "biweekly_price": 0.0036,
+        "iv_weekly": 69.4,
+        "iv_biweekly": 63.3,
+        "index": 2928.91
+      },
+      {
+        "date": "2024-11-16",
+        "ratio": 4.091,
+        "weekly_price": 0.0011,
+        "biweekly_price": 0.0045,
+        "iv_weekly": 69.6,
+        "iv_biweekly": 68.1,
+        "index": 3109.61
+      },
+      {
+        "date": "2024-11-23",
+        "ratio": 2.955,
+        "weekly_price": 0.0022,
+        "biweekly_price": 0.0065,
+        "iv_weekly": 78.1,
+        "iv_biweekly": 72.7,
+        "index": 3299.99
+      },
+      {
+        "date": "2024-11-30",
+        "ratio": 3.235,
+        "weekly_price": 0.0017,
+        "biweekly_price": 0.0055,
+        "iv_weekly": 75.6,
+        "iv_biweekly": 72.1,
+        "index": 3596.43
+      },
+      {
+        "date": "2024-12-07",
+        "ratio": 3.75,
+        "weekly_price": 0.002,
+        "biweekly_price": 0.0075,
+        "iv_weekly": 80.7,
+        "iv_biweekly": 72.3,
+        "index": 3998.55
+      },
+      {
+        "date": "2024-12-14",
+        "ratio": 2.5,
+        "weekly_price": 0.0032,
+        "biweekly_price": 0.008,
+        "iv_weekly": 82.9,
+        "iv_biweekly": 78.1,
+        "index": 3934.65
+      },
+      {
+        "date": "2024-12-21",
+        "ratio": 3.182,
+        "weekly_price": 0.0022,
+        "biweekly_price": 0.007,
+        "iv_weekly": 82.3,
+        "iv_biweekly": 74.5,
+        "index": 3455.88
+      },
+      {
+        "date": "2024-12-28",
+        "ratio": 2.414,
+        "weekly_price": 0.0029,
+        "biweekly_price": 0.007,
+        "iv_weekly": 85.7,
+        "iv_biweekly": 76.0,
+        "index": 3321.05
+      },
+      {
+        "date": "2025-01-04",
+        "ratio": 4.643,
+        "weekly_price": 0.0014,
+        "biweekly_price": 0.0065,
+        "iv_weekly": 74.0,
+        "iv_biweekly": 67.6,
+        "index": 3587.18
+      },
+      {
+        "date": "2025-01-11",
+        "ratio": 3.8,
+        "weekly_price": 0.0025,
+        "biweekly_price": 0.0095,
+        "iv_weekly": 77.3,
+        "iv_biweekly": 72.1,
+        "index": 3271.33
+      },
+      {
+        "date": "2025-01-18",
+        "ratio": 3.704,
+        "weekly_price": 0.0027,
+        "biweekly_price": 0.01,
+        "iv_weekly": 79.8,
+        "iv_biweekly": 75.5,
+        "index": 3517.51
+      },
+      {
+        "date": "2025-01-25",
+        "ratio": 1.786,
+        "weekly_price": 0.0028,
+        "biweekly_price": 0.005,
+        "iv_weekly": 71.8,
+        "iv_biweekly": 69.0,
+        "index": 3332.57
+      },
+      {
+        "date": "2025-02-01",
+        "ratio": 3.437,
+        "weekly_price": 0.0016,
+        "biweekly_price": 0.0055,
+        "iv_weekly": 71.6,
+        "iv_biweekly": 67.4,
+        "index": 3281.88
+      },
+      {
+        "date": "2025-02-08",
+        "ratio": 1.905,
+        "weekly_price": 0.0042,
+        "biweekly_price": 0.008,
+        "iv_weekly": 87.6,
+        "iv_biweekly": 76.7,
+        "index": 2577.01
+      },
+      {
+        "date": "2025-02-15",
+        "ratio": 4.118,
+        "weekly_price": 0.0017,
+        "biweekly_price": 0.007,
+        "iv_weekly": 73.0,
+        "iv_biweekly": 70.0,
+        "index": 2677.93
+      },
+      {
+        "date": "2025-02-22",
+        "ratio": 1.932,
+        "weekly_price": 0.0044,
+        "biweekly_price": 0.0085,
+        "iv_weekly": 83.0,
+        "iv_biweekly": 69.9,
+        "index": 2657.27
+      },
+      {
+        "date": "2025-03-01",
+        "ratio": 1.462,
+        "weekly_price": 0.0065,
+        "biweekly_price": 0.0095,
+        "iv_weekly": 94.3,
+        "iv_biweekly": 78.9,
+        "index": 2205.77
+      },
+      {
+        "date": "2025-03-08",
+        "ratio": 2.5,
+        "weekly_price": 0.0036,
+        "biweekly_price": 0.009,
+        "iv_weekly": 97.9,
+        "iv_biweekly": 80.6,
+        "index": 2184.02
+      },
+      {
+        "date": "2025-03-15",
+        "ratio": 2.414,
+        "weekly_price": 0.0029,
+        "biweekly_price": 0.007,
+        "iv_weekly": 91.2,
+        "iv_biweekly": 80.2,
+        "index": 1926.95
+      },
+      {
+        "date": "2025-03-22",
+        "ratio": 2.857,
+        "weekly_price": 0.0021,
+        "biweekly_price": 0.006,
+        "iv_weekly": 79.1,
+        "iv_biweekly": 69.0,
+        "index": 1993.12
+      },
+      {
+        "date": "2025-03-29",
+        "ratio": 2.051,
+        "weekly_price": 0.0039,
+        "biweekly_price": 0.008,
+        "iv_weekly": 90.7,
+        "iv_biweekly": 76.1,
+        "index": 1895.71
+      },
+      {
+        "date": "2025-04-05",
+        "ratio": 2.973,
+        "weekly_price": 0.0037,
+        "biweekly_price": 0.011,
+        "iv_weekly": 99.5,
+        "iv_biweekly": 85.7,
+        "index": 1821.28
+      },
+      {
+        "date": "2025-04-12",
+        "ratio": 2.083,
+        "weekly_price": 0.0048,
+        "biweekly_price": 0.01,
+        "iv_weekly": 101.7,
+        "iv_biweekly": 88.7,
+        "index": 1569.26
+      },
+      {
+        "date": "2025-04-19",
+        "ratio": 2.738,
+        "weekly_price": 0.0042,
+        "biweekly_price": 0.0115,
+        "iv_weekly": 74.4,
+        "iv_biweekly": 70.6,
+        "index": 1590.3
+      },
+      {
+        "date": "2025-04-26",
+        "ratio": 3.75,
+        "weekly_price": 0.0028,
+        "biweekly_price": 0.0105,
+        "iv_weekly": 86.8,
+        "iv_biweekly": 74.1,
+        "index": 1796.13
+      },
+      {
+        "date": "2025-05-03",
+        "ratio": 4.412,
+        "weekly_price": 0.0017,
+        "biweekly_price": 0.0075,
+        "iv_weekly": 77.5,
+        "iv_biweekly": 65.8,
+        "index": 1848.0
+      },
+      {
+        "date": "2025-05-10",
+        "ratio": 2.091,
+        "weekly_price": 0.0055,
+        "biweekly_price": 0.0115,
+        "iv_weekly": 94.1,
+        "iv_biweekly": 80.6,
+        "index": 2340.31
+      },
+      {
+        "date": "2025-05-17",
+        "ratio": 3.167,
+        "weekly_price": 0.003,
+        "biweekly_price": 0.0095,
+        "iv_weekly": 86.6,
+        "iv_biweekly": 73.0,
+        "index": 2467.67
+      },
+      {
+        "date": "2025-05-24",
+        "ratio": 2.419,
+        "weekly_price": 0.0031,
+        "biweekly_price": 0.0075,
+        "iv_weekly": 90.0,
+        "iv_biweekly": 79.6,
+        "index": 2510.25
+      },
+      {
+        "date": "2025-05-31",
+        "ratio": 2.941,
+        "weekly_price": 0.0034,
+        "biweekly_price": 0.01,
+        "iv_weekly": 80.8,
+        "iv_biweekly": 74.5,
+        "index": 2535.19
+      },
+      {
+        "date": "2025-06-07",
+        "ratio": 2.963,
+        "weekly_price": 0.0027,
+        "biweekly_price": 0.008,
+        "iv_weekly": 83.6,
+        "iv_biweekly": 76.3,
+        "index": 2490.8
+      },
+      {
+        "date": "2025-06-14",
+        "ratio": 2.5,
+        "weekly_price": 0.0048,
+        "biweekly_price": 0.012,
+        "iv_weekly": 97.8,
+        "iv_biweekly": 83.1,
+        "index": 2534.22
+      },
+      {
+        "date": "2025-06-21",
+        "ratio": 2.778,
+        "weekly_price": 0.0027,
+        "biweekly_price": 0.0075,
+        "iv_weekly": 89.0,
+        "iv_biweekly": 79.9,
+        "index": 2401.7
+      },
+      {
+        "date": "2025-06-28",
+        "ratio": 3.75,
+        "weekly_price": 0.0016,
+        "biweekly_price": 0.006,
+        "iv_weekly": 73.7,
+        "iv_biweekly": 69.2,
+        "index": 2420.01
+      },
+      {
+        "date": "2025-07-05",
+        "ratio": 1.389,
+        "weekly_price": 0.0036,
+        "biweekly_price": 0.005,
+        "iv_weekly": 79.6,
+        "iv_biweekly": 70.7,
+        "index": 2493.13
+      },
+      {
+        "date": "2025-07-12",
+        "ratio": 3.0,
+        "weekly_price": 0.0025,
+        "biweekly_price": 0.0075,
+        "iv_weekly": 80.3,
+        "iv_biweekly": 74.2,
+        "index": 2948.04
+      },
+      {
+        "date": "2025-07-19",
+        "ratio": 3.0,
+        "weekly_price": 0.003,
+        "biweekly_price": 0.009,
+        "iv_weekly": 81.6,
+        "iv_biweekly": 74.0,
+        "index": 3526.2
+      },
+      {
+        "date": "2025-07-26",
+        "ratio": 2.692,
+        "weekly_price": 0.0026,
+        "biweekly_price": 0.007,
+        "iv_weekly": 80.1,
+        "iv_biweekly": 70.3,
+        "index": 3709.39
+      },
+      {
+        "date": "2025-08-02",
+        "ratio": 2.091,
+        "weekly_price": 0.0055,
+        "biweekly_price": 0.0115,
+        "iv_weekly": 88.5,
+        "iv_biweekly": 78.3,
+        "index": 3472.46
+      },
+      {
+        "date": "2025-08-09",
+        "ratio": 3.333,
+        "weekly_price": 0.0021,
+        "biweekly_price": 0.007,
+        "iv_weekly": 74.7,
+        "iv_biweekly": 69.8,
+        "index": 4045.82
+      },
+      {
+        "date": "2025-08-16",
+        "ratio": 3.0,
+        "weekly_price": 0.0035,
+        "biweekly_price": 0.0105,
+        "iv_weekly": 83.3,
+        "iv_biweekly": 78.3,
+        "index": 4403.71
+      },
+      {
+        "date": "2025-08-23",
+        "ratio": 2.692,
+        "weekly_price": 0.0026,
+        "biweekly_price": 0.007,
+        "iv_weekly": 81.3,
+        "iv_biweekly": 72.6,
+        "index": 4827.4
+      },
+      {
+        "date": "2025-08-30",
+        "ratio": 2.0,
+        "weekly_price": 0.0045,
+        "biweekly_price": 0.009,
+        "iv_weekly": 75.4,
+        "iv_biweekly": 73.1,
+        "index": 4317.79
+      },
+      {
+        "date": "2025-09-06",
+        "ratio": 3.722,
+        "weekly_price": 0.0018,
+        "biweekly_price": 0.0067,
+        "iv_weekly": 80.7,
+        "iv_biweekly": 74.9,
+        "index": 4323.8
+      },
+      {
+        "date": "2025-09-13",
+        "ratio": 4.0,
+        "weekly_price": 0.0015,
+        "biweekly_price": 0.006,
+        "iv_weekly": 69.8,
+        "iv_biweekly": 68.3,
+        "index": 4680.69
+      },
+      {
+        "date": "2025-09-20",
+        "ratio": 2.75,
+        "weekly_price": 0.002,
+        "biweekly_price": 0.0055,
+        "iv_weekly": 73.0,
+        "iv_biweekly": 65.8,
+        "index": 4450.67
+      },
+      {
+        "date": "2025-09-27",
+        "ratio": 3.158,
+        "weekly_price": 0.0019,
+        "biweekly_price": 0.006,
+        "iv_weekly": 76.2,
+        "iv_biweekly": 70.1,
+        "index": 4021.95
+      },
+      {
+        "date": "2025-10-04",
+        "ratio": 2.75,
+        "weekly_price": 0.002,
+        "biweekly_price": 0.0055,
+        "iv_weekly": 73.2,
+        "iv_biweekly": 66.5,
+        "index": 4510.25
+      },
+      {
+        "date": "2025-10-11",
+        "ratio": 3.571,
+        "weekly_price": 0.0021,
+        "biweekly_price": 0.0075,
+        "iv_weekly": 87.2,
+        "iv_biweekly": 72.3,
+        "index": 3877.15
+      },
+      {
+        "date": "2025-10-18",
+        "ratio": 1.667,
+        "weekly_price": 0.006,
+        "biweekly_price": 0.01,
+        "iv_weekly": 92.0,
+        "iv_biweekly": 81.1,
+        "index": 3836.0
+      },
+      {
+        "date": "2025-10-25",
+        "ratio": 3.333,
+        "weekly_price": 0.003,
+        "biweekly_price": 0.01,
+        "iv_weekly": 84.8,
+        "iv_biweekly": 73.5,
+        "index": 3913.72
+      },
+      {
+        "date": "2025-11-01",
+        "ratio": 7.692,
+        "weekly_price": 0.0013,
+        "biweekly_price": 0.01,
+        "iv_weekly": 80.0,
+        "iv_biweekly": 69.3,
+        "index": 3886.27
+      },
+      {
+        "date": "2025-11-08",
+        "ratio": 2.903,
+        "weekly_price": 0.0031,
+        "biweekly_price": 0.009,
+        "iv_weekly": 86.4,
+        "iv_biweekly": 77.4,
+        "index": 3437.55
+      },
+      {
+        "date": "2025-11-15",
+        "ratio": 1.513,
+        "weekly_price": 0.0076,
+        "biweekly_price": 0.0115,
+        "iv_weekly": 94.5,
+        "iv_biweekly": 88.1,
+        "index": 3105.16
+      },
+      {
+        "date": "2025-11-22",
+        "ratio": 2.333,
+        "weekly_price": 0.009,
+        "biweekly_price": 0.021,
+        "iv_weekly": 100.5,
+        "iv_biweekly": 90.0,
+        "index": 2762.9
+      },
+      {
+        "date": "2025-11-29",
+        "ratio": 3.846,
+        "weekly_price": 0.0026,
+        "biweekly_price": 0.01,
+        "iv_weekly": 75.8,
+        "iv_biweekly": 76.9,
+        "index": 3028.42
+      },
+      {
+        "date": "2025-12-06",
+        "ratio": 2.083,
+        "weekly_price": 0.0048,
+        "biweekly_price": 0.01,
+        "iv_weekly": 87.8,
+        "iv_biweekly": 80.5,
+        "index": 3024.39
+      },
+      {
+        "date": "2025-12-13",
+        "ratio": 2.5,
+        "weekly_price": 0.003,
+        "biweekly_price": 0.0075,
+        "iv_weekly": 84.2,
+        "iv_biweekly": 75.5,
+        "index": 3076.81
+      },
+      {
+        "date": "2025-12-20",
+        "ratio": 5.588,
+        "weekly_price": 0.0017,
+        "biweekly_price": 0.0095,
+        "iv_weekly": 82.2,
+        "iv_biweekly": 70.0,
+        "index": 2979.71
+      },
+      {
+        "date": "2025-12-27",
+        "ratio": 5.4,
+        "weekly_price": 0.0005,
+        "biweekly_price": 0.0027,
+        "iv_weekly": 68.3,
+        "iv_biweekly": 65.6,
+        "index": 2915.97
+      },
+      {
+        "date": "2026-01-03",
+        "ratio": 4.643,
+        "weekly_price": 0.0014,
+        "biweekly_price": 0.0065,
+        "iv_weekly": 65.6,
+        "iv_biweekly": 63.7,
+        "index": 3131.62
+      },
+      {
+        "date": "2026-01-10",
+        "ratio": 5.833,
+        "weekly_price": 0.0006,
+        "biweekly_price": 0.0035,
+        "iv_weekly": 67.3,
+        "iv_biweekly": 65.0,
+        "index": 3092.78
+      },
+      {
+        "date": "2026-01-17",
+        "ratio": 6.2,
+        "weekly_price": 0.0005,
+        "biweekly_price": 0.0031,
+        "iv_weekly": 62.5,
+        "iv_biweekly": 58.0,
+        "index": 3298.89
+      },
+      {
+        "date": "2026-01-24",
+        "ratio": 3.929,
+        "weekly_price": 0.0014,
+        "biweekly_price": 0.0055,
+        "iv_weekly": 71.0,
+        "iv_biweekly": 58.0,
+        "index": 2945.79
+      },
+      {
+        "date": "2026-01-31",
+        "ratio": 1.154,
+        "weekly_price": 0.0039,
+        "biweekly_price": 0.0045,
+        "iv_weekly": 70.1,
+        "iv_biweekly": 76.1,
+        "index": 2704.62
+      },
+      {
+        "date": "2026-02-07",
+        "ratio": 1.667,
+        "weekly_price": 0.009,
+        "biweekly_price": 0.015,
+        "iv_weekly": 108.3,
+        "iv_biweekly": 88.8,
+        "index": 1999.96
+      },
+      {
+        "date": "2026-02-14",
+        "ratio": 3.125,
+        "weekly_price": 0.0032,
+        "biweekly_price": 0.01,
+        "iv_weekly": 82.2,
+        "iv_biweekly": 73.7,
+        "index": 2054.75
+      },
+      {
+        "date": "2026-02-21",
+        "ratio": 2.25,
+        "weekly_price": 0.004,
+        "biweekly_price": 0.009,
+        "iv_weekly": 82.3,
+        "iv_biweekly": 75.2,
+        "index": 1977.79
+      }
+    ]
+  }
+}
