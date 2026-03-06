@@ -2,6 +2,7 @@
 """
 期权价格监测网站 - 数据更新脚本
 生成JSON数据供前端网站使用
+已修复：过滤Strike不匹配和IV异常的数据
 """
 import requests
 import json
@@ -50,8 +51,9 @@ def load_historical_data():
     return data
 
 def calculate_ratios(hist_data):
-    """计算短长期比例"""
+    """计算短长期比例 - 只使用Strike匹配的数据"""
     ratios = {'BTC': [], 'ETH': []}
+    anomalies = {'BTC': [], 'ETH': []}
     
     for asset in ['BTC', 'ETH']:
         asset_data = [d for d in hist_data if d['asset'] == asset]
@@ -59,12 +61,39 @@ def calculate_ratios(hist_data):
         
         for date in dates:
             day_data = [d for d in asset_data if d['date'] == date]
-            weekly = [d for d in day_data if d['type'] == '周期权']
-            biweekly = [d for d in day_data if d['type'] == '两周期权']
+            weekly_list = [d for d in day_data if d['type'] == '周期权']
+            biweekly_list = [d for d in day_data if d['type'] == '两周期权']
             
-            if weekly and biweekly:
-                weekly_price = weekly[0]['price']
-                biweekly_price = biweekly[0]['price']
+            if weekly_list and biweekly_list:
+                weekly = weekly_list[0]
+                biweekly = biweekly_list[0]
+                
+                # 检查Strike是否匹配（允许5%误差）
+                strike_diff = abs(weekly['strike'] - biweekly['strike']) / weekly['strike']
+                
+                if strike_diff > 0.05:
+                    # Strike不匹配，标记为异常
+                    anomalies[asset].append({
+                        'date': date,
+                        'issue': 'strike_mismatch',
+                        'weekly_strike': weekly['strike'],
+                        'biweekly_strike': biweekly['strike'],
+                        'strike_diff_pct': round(strike_diff * 100, 2)
+                    })
+                    continue
+                
+                # 检查IV是否异常（>100%）
+                if weekly['iv'] > 100 or biweekly['iv'] > 100:
+                    anomalies[asset].append({
+                        'date': date,
+                        'issue': 'iv_anomaly',
+                        'iv_weekly': weekly['iv'],
+                        'iv_biweekly': biweekly['iv']
+                    })
+                    continue
+                
+                weekly_price = weekly['price']
+                biweekly_price = biweekly['price']
                 
                 if weekly_price > 0:
                     ratio = biweekly_price / weekly_price
@@ -73,12 +102,13 @@ def calculate_ratios(hist_data):
                         'ratio': round(ratio, 3),
                         'weekly_price': weekly_price,
                         'biweekly_price': biweekly_price,
-                        'iv_weekly': weekly[0]['iv'],
-                        'iv_biweekly': biweekly[0]['iv'],
-                        'index': weekly[0]['index']
+                        'iv_weekly': weekly['iv'],
+                        'iv_biweekly': biweekly['iv'],
+                        'index': weekly['index'],
+                        'strike': weekly['strike']
                     })
     
-    return ratios
+    return ratios, anomalies
 
 def main():
     print(f"[{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] 开始更新期权监测数据...")
@@ -164,7 +194,18 @@ def main():
     
     # 加载历史数据并计算比率
     hist_data = load_historical_data()
-    ratios = calculate_ratios(hist_data)
+    ratios, anomalies = calculate_ratios(hist_data)
+    
+    # 打印异常数据
+    if anomalies['BTC']:
+        print(f"\n⚠️ BTC 数据异常 ({len(anomalies['BTC'])} 条):")
+        for a in anomalies['BTC'][-5:]:
+            print(f"  {a['date']}: {a.get('issue', 'unknown')}")
+    
+    if anomalies['ETH']:
+        print(f"\n⚠️ ETH 数据异常 ({len(anomalies['ETH'])} 条):")
+        for a in anomalies['ETH'][-5:]:
+            print(f"  {a['date']}: {a.get('issue', 'unknown')}")
     
     # 准备输出数据
     output = {
@@ -195,7 +236,16 @@ def main():
                 }
             }
         },
-        'historical_ratios': ratios
+        'historical_ratios': ratios,
+        'data_quality': {
+            'btc_total_records': len([d for d in hist_data if d['asset'] == 'BTC']),
+            'btc_valid_records': len(ratios['BTC']),
+            'btc_anomalies': len(anomalies['BTC']),
+            'eth_total_records': len([d for d in hist_data if d['asset'] == 'ETH']),
+            'eth_valid_records': len(ratios['ETH']),
+            'eth_anomalies': len(anomalies['ETH']),
+            'anomalies_detail': anomalies
+        }
     }
     
     # 保存JSON文件
@@ -205,14 +255,16 @@ def main():
     with open(output_dir / 'options_data.json', 'w') as f:
         json.dump(output, f, indent=2)
     
-    print(f"✅ 数据已更新并保存到 {output_dir / 'options_data.json'}")
-    print(f"\n📊 当前数据摘要:")
+    print(f"\n✅ 数据已更新并保存到 {output_dir / 'options_data.json'}")
+    print(f"\n📊 数据质量报告:")
+    print(f"  BTC: {len(ratios['BTC'])}/{len([d for d in hist_data if d['asset'] == 'BTC'])} 条有效 ({len(anomalies['BTC'])} 条异常已过滤)")
+    print(f"  ETH: {len(ratios['ETH'])}/{len([d for d in hist_data if d['asset'] == 'ETH'])} 条有效 ({len(anomalies['ETH'])} 条异常已过滤)")
+    print(f"\n📈 当前数据摘要:")
     print(f"  BTC: ${btc_price:,.2f} | ETH: ${eth_price:,.2f}")
     if btc_short and btc_mid:
         print(f"  BTC 短/中比率: {output['options']['BTC']['ratios']['short_mid']:.3f}x")
     if eth_short and eth_mid:
         print(f"  ETH 短/中比率: {output['options']['ETH']['ratios']['short_mid']:.3f}x")
-    print(f"  历史数据点: BTC {len(ratios['BTC'])} | ETH {len(ratios['ETH'])}")
 
 if __name__ == '__main__':
     main()
